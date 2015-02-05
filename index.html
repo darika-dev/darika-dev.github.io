@@ -1,177 +1,344 @@
 <!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" dir="ltr" lang="ru">
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" dir="ltr" lang="ru">
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" dir="ltr" lang="ru">
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html dir="ltr" lang="ru">
-<!--<![endif]-->
+<html class="skrollr skrollr-desktop">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="robots" content="index,follow">
-	<meta name="description" content="Личная страница, портфолио">
-    <meta name="keywords" content="DariKa,Front-end,Front End development,HTML,HTML 5,CSS,CSS3,javascript,Canvas,jQuery,Responsive Design, Development, Web Development, web разработчик">
-	<meta name="author" content="DariKa">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DariKa | Front-end Developer</title>
 
-    <meta property="og:image" content="img/darika.png">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="hootsuite-owls.ico">
+        <meta name="description" content="Личная страница, портфолио">
+	    <meta name="keywords" content="DariKa,Front-end,Front End development,HTML,HTML 5,CSS,CSS3,javascript,Canvas,jQuery,Responsive Design, Development, Web Development, web разработчик">
+		<meta name="author" content="DariKa">
 
-    <title>ДариКа | front-end developer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-
-	<link rel="apple-touch-icon" sizes="57x57" href="img/ct-57x57.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/ct-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/ct-114x114.png">
-	
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="shortcut icon" type="image/png" href="img/workflow_icons_64.ico">
+        <link rel="stylesheet" href="css/main.css">
 </head>
+    <body>
 
-<body>
+        <!--[if lt IE 8]>
+            <div class="browseHappy">
+		        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	        </div>
+        <![endif]-->
 
+        <!-- Welcome -->
+        <div class="welcome">
+	        <h2>Дарья Казанцева</h2>
+	        <h3>Front-end <span>developer</span></h3>
+        </div>
 
+        <div id="mainViewpoint">
+	        <!-- Header -->
+	        <header id="header">
+	        	<nav id="navigation" data-400="background: rgba(55, 176, 233, 0)" data-432="background: rgba(55, 176, 233, .98)" class="skrollable skrollable-after" style="background: rgba(55, 176, 233, 0.980392);">
+	        		<a class="logo left" href="#">
+	        			<img src="./img/logo.png" width="107px" height="28px">
+	        		</a>
+	        		<ul class="right">
+	        			<li><a href="#about">Обо мне</a></li>
+	        			<li><a href="#work">Портфолио</a></li>
+	        			<li><a href="#contact">Контакты</a></li>
+<!-- 	        			<li><a class="contactDariKa" href="#talk">Написать письмо</a></li>
+ -->	        		</ul>
+	        		<a class="mobileNav right" href="#"><span class="icon"></span></a>
+	        		<div class="clear"></div>
+	        		 <div class="mobileMenu">
+			        	<ul>
+			        		<li><a href="#about">Обо мне</a></li>
+				        	<li><a href="#work">Портфолио</a></li>
+				        	<li><a href="#contact">Контакты</a></li>
+<!-- 				        	<li><a href="#talk">Написать письмо</a></li>
+ -->			        	</ul>
+			        </div>
+	        	</nav>
+	        	<!-- Hero -->
+	        	<div class="hero skrollable skrollable-after" data-0="background-position: 0 0px; opacity: 1" data-400="background-position: 0 -30px; opacity: 0" style="opacity: 0; background-position: 0px -30px;">
+		        	<h2 data-0="padding-top: 160px" data-400="padding-top: 50px" class="skrollable skrollable-after" style="padding-top: 50px;">Дарья Казанцева</h2>
+		        	<h3>Front-end <span>developer</span></h3>
+		        	<a data-0="bottom: 40px" data-400="bottom: 250px" class="scrollDown skrollable skrollable-after" href="#about" style="bottom: 250px;"><span class="icon"></span></a>
+	        	</div>
+	        </header>
+	        <div id="skrollr-body">
+		        <div id="main">
+		        	<!-- About -->
+		        	<section id="about">
+		        		<div class="wrapper">
+		        			<header>
+		        				<h3>Обучение и развитие - вот моя страсть</h3>
+		        			</header>
+		        			<p>Привет!<br>
+		        			Меня зовут Дарья. Я живу в Перми, работаю веб-программистом в компании NewProject1. Программирование привлекало меня всегда и сейчас я занимаюсь именно тем, что мне нравится. В свободное время я изучаю новые технологии, фотографируюсь, катаюсь на сноуборде, посещаю интересные мероприятия нашего города (связанные с автоспортом).</p>
+		        		</div>
+		        		<div class="workFlow">
+		        			<div class="wrapper">
+		        				<ul>
+		        					<li class="HTML5">
+			        					<div class="iconContainer">
+			        						<span class="shadowEffect"></span>
+			        						<span class="icon"></span>
+			        					</div>
+			        					<span class="point autoCenter"></span>
+			        					<div class="details" style="width: 92px;">
+				        					<h4>HTML5</h4>
+				        					<ul>
+				        						<li>Bootstrap</li>
+				        						<li>Jeet</li>
+				        					</ul>
+			        					</div>
+		        					</li>
+		        					<li class="CSS3">
+			        					<div class="iconContainer">
+			        						<span class="shadowEffect"></span>
+			        						<span class="icon"></span>
+			        					</div>
+			        					<span class="point autoCenter"></span>
+			        					<div class="details" style="width: 81px;">
+				        					<h4>CSS3</h4>
+				        					<ul>
+				        						<li>Less | Saas</li>
+				        						<li>Stylus</li>
+				        					</ul>
+			        					</div>
+		        					</li>
+		        					<li class="JavaScript">
+			        					<div class="iconContainer">
+			        						<span class="shadowEffect"></span>
+			        						<span class="icon"></span>
+			        					</div>
+			        					<span class="point autoCenter"></span>
+			        					<div class="details" style="width: 144px;">
+				        					<h4>JavaScript</h4>
+				        					<ul>
+				        						<li>jQuery</li>
+				        					</ul>
+			        					</div>
+		        					</li>
+		        					<li class="learn">
+			        					<div class="iconContainer">
+			        						<span class="shadowEffect"></span>
+			        						<span class="icon"></span>
+			        					</div>
+			        					<span class="point autoCenter"></span>
+			        					<div class="details" style="width: 84px;">
+				        					<h4>Изучаю</h4>
+				        					<ul>
+                                                <li>PHP</li>
+                                                <li>Node.js</li>
+                                                <li>Wordpress</li>
+				        					</ul>
+			        					</div>
+		        					</li>
+		        				</ul>
+		        				<div class="clear"></div>
+		        			</div>
+		        		</div>
+		        	</section>
+		        	<section id="work">
+			        	<div class="wrapper">
+				        	<header>
+		        				<h3>Мои работы</h3>
+		        			</header>
+		        			<div class="gallery">
+                                <div class="shotWrapper shotWrapperJS" data-img="img/nakleeno.png">
+                                    <div class="shot" style="background: url(img/nakleeno_preview.png)">
+                                        <div class="overlay">
+                                            <div class="contentContainer">
+                                                <header>
+                                                    <h4>Nakleeno | интернет-магазин наклеек</h4>
+                                                    <p>HTML, CSS, JavaScript</p>
+                                                </header>
+                                                <a class="viewProject" href="" target="_blank">В разработке</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shotWrapper shotWrapperJS" data-img="img/asper.png">
+                                    <div class="shot" style="background: url(img/asper_preview.png)">
+                                        <div class="overlay">
+                                            <div class="contentContainer">
+                                                <header>
+                                                    <h4>Asper | Сервис по подбору персонала</h4>
+                                                    <p>HTML5, Less</p>
+                                                </header>
+                                                <a class="viewProject" href="" target="_blank">В разработке</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shotWrapper" data-img="img/newproject.png">
+                                    <div class="shot" style="background: url(img/newproject_preview.png)">
+                                        <div class="overlay">
+                                            <div class="contentContainer">
+                                                <header>
+                                                    <h4>NewProject1 | корпоративный сайт</h4>
+                                                    <p>Дизайн, HTML5, CSS3, jQuery</p>
+                                                </header>
+                                                <a class="viewProject" href="http://newproject1.com/" target="_blank">Перейти на сайт</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+		        				<div class="shotWrapper" data-img="img/playkey.png">
+		        					<div class="shot" style="background: url(img/playkey_preview.png)">
+		        						<div class="overlay">
+		        							<div class="contentContainer">
+		        								<header>
+		        									<h4>PlayKey | Сервис облачных игр</h4>
+		        									<p>HTML5, Stylus, jQuery</p>
+		        								</header>
+                                                <a class="viewProject" href="http://playkey.net/ru/intro/" target="_blank">Перейти на сайт</a>
+		        							</div>
+		        						</div>
+		        					</div>
+		        				</div>
+		        				<div class="shotWrapper shotWrapperJS" data-img="img/leolibro.png">
+		        					<div class="shot" style="background: url(img/leolibro_preview.png)">
+		        						<div class="overlay">
+		        							<div class="contentContainer">
+		        								<header>
+		        									<h4>LeoLibro | Интернет-магазин электронных книг</h4>
+		        									<p>HTML5, Stylus</p>
+		        								</header>
+                                                <a class="viewProject" href="" target="_blank">В разработке</a>
+		        							</div>
+		        						</div>
+		        					</div>
+		        				</div>
+		        				<div class="shotWrapper shotWrapperJS" data-img="img/elis.png">
+		        					<div class="shot" style="background: url(img/elis_preview.png)">
+		        						<div class="overlay">
+		        							<div class="contentContainer">
+		        								<header>
+		        									<h4>Elis-строй | Строительная компания</h4>
+		        									<p>Дизайн, HTML5, Stylus, jQuery</p>
+		        								</header>
+                                                <a class="viewProject" href="" target="_blank">В разработке</a>
+		        							</div>
+		        						</div>
+		        					</div>
+		        				</div>
+		        				<div class="shotWrapper shotWrapperJS" data-img="img/plitka.png">
+		        					<div class="shot" style="background: url(img/plitka_preview.png)">
+		        						<div class="overlay">
+		        							<div class="contentContainer">
+		        								<header>
+		        									<h4>Студия плитки | Интернет-магазин</h4>
+		        									<p>HTML5, Stylus, jQuery</p>
+		        								</header>
+                                                <a class="viewProject" href="" target="_blank">В разработке</a>
+		        							</div>
+		        						</div>
+		        					</div>
+		        				</div>
+		        				<div class="shotWrapper shotWrapperJS" data-img="img/sm_site.png">
+		        					<div class="shot" style="background: url(img/sm_site_preview.png)">
+		        						<div class="overlay">
+		        							<div class="contentContainer">
+		        								<header>
+		        									<h4>Городские встречи | Арт-агенство</h4>
+		        									<p>Дизайн, HTML5, Stylus, Wordpress</p>
+		        								</header>
+                                                <a class="viewProject" href="" target="_blank">В разработке</a>
+		        							</div>
+		        						</div>
+		        					</div>
+		        				</div>
+		        				<div class="clear"></div>
+		        			</div>
+			        	</div>
+		        	</section>
+		        	<section id="contact">
+						<div class="contactDetails">
+							<div class="wrapper">
+								<div class="column">
+									<header>
+					        			<h3>Социальные сети</h3>
+									</header>
+									<p class="social">
+										<a href="https://twitter.com/lDari_Ka" target="_blank" class="twitter"></a>
+										<a href="http://lnkd.in/bFGkHzQ" target="_blank" class="linkedin"></a>
+										<a href="http://vk.com/ka_daria" target="_blank" class="vk"></a>
+									</p>
+								</div>
+								<div class="column">
+									<header>
+					        			<h3>Skype</h3>
+									</header>
+									<p><a href="skype:ka_darya">ka_darya</a></p>
+								</div>
+								<div class="column">
+									<header>
+					        			<h3>E-mail</h3>
+									</header>
+									<p><a href="mailto:ppartesia@gmail.com">ppartesia@gmail.com</a></p>
+								</div>
+								<div class="clear"></div>
+							</div>
+		        		</div>
+		        	</section>
+<!-- 		        	<section id="letsTalk">
+		        		<a class="contactDariKa" href="#"><h4>Давайте <span>обсудим</span> ваш следующий проект<span class="icon"></span></h4></a>
+		        	</section> -->
+		        	<footer>
+		        		<div class="logo left">
+		        			<img src="./img/logo.png" width="107px" height="28px">
+		        		</div>
+		        		<ul class="right">
+		        			<li><a href="#about">Обо мне</a></li>
+		        			<li><a href="#work">Портфолио</a></li>
+		        			<li><a href="#contact">Контакты</a></li>
+<!-- 		        			<li><a class="contactDariKa" href="#talk">Написать письмо</a></li>
+ -->		        		</ul>
+		        	</footer>
+		        </div>
+	        </div>
+        </div>
+<!--         <div class="contactModal">
+        	<div class="modalWrapper">
+        		<div class="modal">
+        			<div class="contentContainer">
+        				<h2>Написать письмо</h2>
+        				<p>У вас есть проект, который вы хотите мне предложить? Или, может быть, просто поболтать? Просто напишите мне.</p>
+        			</div>
+        			<form method="post" action="contact.php" id="contactForm">
+	        			<div class="formContainer">
+	        				<div class="contentContainer">
+		        				<div class="inputContainer">
+		        					<input type="text" name="name" id="name" placeholder="Ваше имя" required="">
+		        				</div>
+		        				<div class="inputContainer">
+		        					<input type="text" name="email" id="email" placeholder="Ваш E-mail" required="">
+		        				</div>
+		        				<div class="messageContainer">
+		        					<textarea name="message" id="message" placeholder="Просто напишите то, что хотели..." required=""></textarea>
+		        				</div>
+	        				</div>
+	        			</div>
+	        			<div class="formActions">
+	        				<button class="secondaryBtn">Отмена</button>
+	        				<button class="primaryBtn">Отправить сообщение</button>
+	        			</div>
+        			</form>
+        			<div class="loadingOverlay">
+	        			<div class="loadingIcon"></div>
+        			</div>
+        			<div class="successOverlay">
+        				<h2>Письмо успешно отправлено.</h2>
+        				<p>Я постараюсь ответить вам в течение нескольких дней.</p>
+        				<a class="close" href="#">Закрыть</a>
+        			</div>
+        		</div>
+        	</div>
+        </div> -->
 
-  <div id="container">
-    <header>
-      <div class="pagewidth">
-      
-      	<a href="index2.html">
-	      	<hgroup>
-		      	<h1>Дарья Казанцева</h1>
-		      	<h2>front-end developer</h2>
-	      	</hgroup>
-      	</a>
-      	
-<!--       	<nav>
-      		<a href="index2.html" class="active">Работа</a>
-      		<a href="#">Блог</a>
-      		<a href="http://charlottetang.com/#hello" id="contact">Контакты</a>
-      	</nav>
- -->      
-      </div>
-    </header>
-    <div class="main" role="main">
-      <div class="pagewidth">
-		<section class="portfolio">
-
-
-		
-			<article>
-				<a href="#"  target="_blank">
-					<header>
-						<div class="details">	
-							<h1>Nakleeno</h1>
-							<p><i>Интернет-магазин наклеек.</i><br>HTML | CSS | Javascript</p>
-						</div>
-					</header>
-					<span class="bw-wrap"><img src="img/nakleeno11.png" alt="Nakleeno - интернет-магазин наклеек" class="bw"></span>
-					<span class="clr-wrap"><img src="img/nakleeno1.png" alt="Nakleeno - интернет-магазин наклеек" class="clr"></span>
-				</a>
-			</article>
-			
-		
-			
-			<article>
-				<a href="#"  target="_blank">
-					<header>
-						<div class="details">	
-							<h1>Asper</h1>
-							<p><i>Сервис по подбору персонала.</i><br>HTML | Less</p>
-						</div>
-					</header>
-					<span class="bw-wrap"><img src="img/asper11.png" alt="Asper - cервис по подбору персонала" class="bw"></span>
-					<span class="clr-wrap"><img src="img/asper1.png" alt="Asper - cервис по подбору персонала" class="clr"></span>
-				</a>
-			</article>
-			
-		
-			
-			<article>
-				<a href="#"  target="_blank">
-					<header>
-						<div class="details">	
-							<h1>NewProject 1</h1>
-                            <p><i>Корпоративный сайт.</i><br>Design | HTML | CSS | Javascript</p>
-						</div>
-					</header>
-					<span class="bw-wrap"><img src="img/newproject11.png" alt="NewProject 1 - корпоративный сайт" class="bw"></span>
-					<span class="clr-wrap"><img src="img/newproject1.png" alt="NewProject 1 - корпоративный сайт" class="clr"></span>
-				</a>
-			</article>
-			
-		
-			
-			<article>
-				<a href="#"  target="_blank">
-					<header>
-						<div class="details">	
-							<h1>PlayKey</h1>
-							<p><i>Сервис облачных игр.</i><br>HTML | Stylus | jQuery</p>
-						</div>
-					</header>
-					<span class="bw-wrap"><img src="img/playkey11.png" alt="PlayKey - cервис облачных игр" class="bw"></span>
-					<span class="clr-wrap"><img src="img/playkey1.png" alt="PlayKey - cервис облачных игр" class="clr"></span>
-				</a>
-			</article>
-			
-			<article>
-				<a href="#"  target="_blank">
-					<header>
-						<div class="details">	
-							<h1>leoLibro</h1>
-							<p><i>Магазин электронных книг.</i><br>HTML | Stylus | jQuery</p>
-						</div>
-					</header>
-					<span class="bw-wrap"><img src="img/leolibro11.png" alt="leoLibro - магазин электронных книг" class="bw"></span>
-					<span class="clr-wrap"><img src="img/leolibro1.png" alt="leoLibro - магазин электронных книг" class="clr"></span>
-				</a>
-			</article>
-		
-				
-		</section>
-      </div>
-    </div>
-  </div> 
-  <footer>
-    <div class="pagewidth">
-    	
-    	<section class="photo" id="photo">
-    		<img src="img/darika1.png" alt="photo DariKa">
-    	</section>
-
-
-    	<section class="about" id="about">
-    		<h1>Обо мне</h1>
-    		<p>Привет! Меня зовут Дарья. Я живу в городе Пермь (Россия). Работаю в компании NewProject1, занимаюсь программированием клиентской части веб-сайтов. В своей работе использую HTML5, CSS3, Stylus, JavaScript, jQuery. Я очень люблю новые, сложные задачи. Обучение и развитие - вот моя страсть.</p>
-			<p>В свободное время я смотрю фильмы, фотографируюсь и катаюсь на сноуборде.</p>
-    	</section>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/skrollr.min.js"></script>
+        <script src="./js/waypoints.min.js"></script>
     
- 	
-    	<section class="follow">
-    		<h1>Контакты</h1>
-    		<a href="mailto:ppartesia@gmail.com" class="mail">ppartesia@gmail.com</a>
-    		<a href="https://twitter.com/lDari_Ka" class="twitter" target="_blank"><span>Twitter</span></a>
-    		<a href="https://www.linkedin.com/pub/%D0%B4%D0%B0%D1%80%D1%8C%D1%8F-%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD%D1%86%D0%B5%D0%B2%D0%B0/65/504/123" class="linkedin" target="_blank"><span>LinkedIn</span></a>
-    	</section>
 
-    	<div class="copyright">
-    		<p>Copyright © 2014 DariKa<br>
-            <span style="font-size:0.6em;">HTML5 | CSS3 | JavaScript | Front-End Development </span><p>
-    	</div>
-
-    </div>
-
-  </footer>
-
-
-
-	</body>
+</body>
 </html>
