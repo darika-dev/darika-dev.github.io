@@ -173,9 +173,9 @@ small {
 }
 
  
- [class^="icon-"]:before, [class*=" icon-"]:before {
-/*	font-family: "fontello";
-*/	font-style: normal;
+.footer [class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "fontello";
+	font-style: normal;
 	font-weight: normal;
 	speak: none;
 
