@@ -112,9 +112,9 @@ nav#navigation a.active:after {
 	height: 21px;
 	opacity: 0.75;
 	position: absolute;
-	right: 5px;
+	right: 10px;
 	text-align:center;
-	top: 23px;
+	top: 30px;
 	width: 21px;
 	z-index:1000;
 }
@@ -334,13 +334,17 @@ section.works .contact-button {
 }
 
 .work {
-	height: 319px !important;
-	display: inline;
-	margin-left: 0px !important;
-	margin-right: 1px !important;
-	margin-bottom: 1px !important;
 	position: relative;
-	width: 319px !important;
+	transition: 0.3s;
+}
+.work:nth-child(2n+1) {
+	clear: left;
+}
+.container .columns.work , .container .column.work  {
+	margin-bottom: 30px;
+}
+.work:hover {
+    box-shadow: 0 0 4px rgba(255,255,255,0.2);
 }
 
 .work img {
@@ -349,21 +353,15 @@ section.works .contact-button {
 }
 
 .work .info {
-    background: rgba(255, 255, 255, 0.9);
-    height: 100%;
-	left: 0;
-    position: absolute;
-    text-align: center;
-	top: 0;
-	bottom: 0;
     width: 100%;
-    z-index: 2;
+    padding: 10px;
+    text-align: left;
 }
 
 .work .info h3 {
-	color: #000000;
+	color: #fff;
     font-size: 24px;
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 7px;
 }
@@ -375,158 +373,12 @@ section.works .contact-button {
     letter-spacing: 0.2px;
 }
 
-.work .info p:after {
-	border-bottom: 2px solid #000000;
-    content: "";
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    top: 12px;
-    width: 14px;
-    z-index: 0;
-}
-
-.work-preview {
-	background: #222222;
-	margin-bottom: 90px;
-	padding-bottom: 60px;
-}
-
-.work-preview-slider {
-	margin-top: 0px !important;
-	overflow:hidden;
-	position:relative;
-}
-
-.work-preview-slider .flex-control-nav {
-	bottom: 15px !important;
-}
-
-.work-preview .info {
-	text-align: left;
-}
-
-.work-preview h1 {
-	color: #ffffff;
-	font-size: 24px;
+.work .info span {
+	color: #999999;
 	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 30px;
-	text-transform: none;
-}
-
-.work-preview h1:after {
-	margin-left: 0 !important;
-	margin-bottom: 16px;
-	top: 22px;
-}
-
-.work-preview h1 span {
-	color: #bcbcbc;
-	font-weight: 400;
-	font-size: 16px;
-	letter-spacing: 1px;
-	line-height: 24px;
-	text-transform: none;
-}
-
-.work-preview p {
-	color: #727272;
-	font-weight: 300;
-	letter-spacing: 0.2px;
-	line-height: 30px;
-}
-
-.work-preview .site-link a {
-	color: #fff;
-}
-.work-preview .site-link a:hover {
-	color: #878787;
-}
-.work-preview .social-icons {
-	border-top: 1px solid #4e4e4e;
-	position: absolute;
-	bottom: 0px;
-}
-
-.work-preview .social-icons ul {
-	padding: 0px;
-}
-
-.work-preview .social-icons li {	
-	color: #4e4e4e;
-	cursor: pointer;
-	display: inline;
-	font-size: 14px;
-	margin: 0px;
-	padding: 20px;
-	-webkit-transition: all 0.5s ease 0s;
-	-moz-transition: all 0.5s ease 0s;
-	-ms-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-
-.work-preview .social-icons li:hover, .work-preview .social-icons li:active {	
-	color: #ffffff;
-}
-
-.work-preview .social-icons li span {	
-	font-weight: 700;
-	padding: 0px;
-	position: relative;
-	top: -5px;
-}
-
-.work-preview .social-icons i {
-	font-size: 26px;
-	margin-right: 8px;
-}
-
-.work-preview .youtube, .work-preview .vimeo, .work-preview .soundcloud, .work-preview video, .work-preview .slider, .work-preview .image, .work-preview img {
-	background-color: #000000;
-	width: 500px;
-	max-width: 100%;
-}
-
-.work-preview .image {
-	margin-bottom: 20px;
-}
-
-.work-preview .audio {
-	background-color: #000000;
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 281px;
-	width: 500px;
-}
-
-.work-preview audio {
-	background-color: transparent;
-	height: 281px;
-	width: 500px;
-}
-
-.work-preview-close {
-	background-image: url(../img/close.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	cursor: pointer;
-	height: 18px;
-	margin: 0px auto 60px;
-	opacity: 0.5;
-	width: 18px;
-	-webkit-transition: all 0.5s ease 0s;
-	-moz-transition: all 0.5s ease 0s;
-	-ms-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-
-.work-preview-close:hover {
-	opacity: 1;	
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    float: right;
 }
 /*Works*/
 
@@ -557,11 +409,16 @@ div.contact-info {
 	padding: 45px 0px !important;
 }
 
+div.contact-info a,
 div.contact-info p {
 	color: #ffffff;
+	display: block;
 	font-weight: 300;
 	letter-spacing: 1px;
 	line-height: 26px;
+}
+div.contact-info a:hover {
+	color: #999;
 }
 /*Contact*/
 
@@ -717,17 +574,6 @@ div.footer .right li i {
 		margin-right: 0px;
 	}
 	/*Header*/
-
-	/*Works*/
-	.work-preview .social-icons {
-		margin-top: 10px;
-		position: relative;
-	}
-
-	.work-preview .social-icons li {
-		padding: 10px;
-	}
-	/*Works*/
 }
 
 
@@ -750,33 +596,9 @@ div.footer .right li i {
 	}
 
 	nav#navigation {
-		margin-right: 20px;
+		margin-right: 0;
 		margin-top: 0px;
 	}
-
-	/*Works*/
-	#works .innerContent {
-		padding-bottom:0px;
-	}
-
-	.work {
-		height: 255px !important;
-		width: 255px !important;
-	}
-
-	.work-preview .social-icons {
-		margin-top: 10px;
-		position: relative;
-	}
-
-	.work-preview p {
-		line-height: 24px;
-	}
-
-	.work-preview .social-icons li {
-		padding: 10px;
-	}
-	/*Works*/
 
 	div.footer .footer-logo {
 		width: 100%;
@@ -810,6 +632,7 @@ div.footer .right li i {
 
 	.home p {
 		font-size: 16px;
+		font-weight: 500;
 	}
 
 	div.about p {
@@ -834,6 +657,7 @@ div.footer .right li i {
 	}
 
 	nav#navigation ul {
+		padding: 0;
 		display:none;
 		margin-bottom:10px;
 	}
@@ -879,10 +703,6 @@ div.footer .right li i {
 		margin-bottom:0;
 	}
 	
-	.container .info {
-		margin-bottom:40px;
-	}
-
 	.container .widget {
 		margin-bottom:20px;
 	}
@@ -898,10 +718,6 @@ div.footer .right li i {
 
 	.skills:last-child .inner {
 		margin-bottom:0;
-	}
-
-	#works .innerContent {
-		padding-bottom:60px;
 	}
 
 	.container .item {
@@ -954,6 +770,7 @@ div.footer .right li i {
 
 	.home p {
 		font-size: 14px;
+		font-weight: 400;
 	}
 
 	/*--Home--*/
@@ -983,6 +800,7 @@ div.footer .right li i {
 	nav#navigation ul {
 		display:none;
 		margin-bottom:20px;
+		padding: 0;
 	}
 
 	nav#navigation li {
@@ -1038,31 +856,6 @@ div.footer .right li i {
 		width:250px;
 	}
 	/*Contact*/
-	
-
-	/*Works*/
-	#works .innerContent {
-		padding-bottom:0px;
-	}
-
-	.work {
-		height: 299px !important;
-		width: 299px !important;
-	}
-
-	.work-preview .info {
-		margin-top: 20px;
-	}
-
-	.work-preview .social-icons {
-		margin-top: 10px;
-		position: relative;
-	}
-
-	.work-preview .social-icons li {
-		padding: 10px;
-	}
-	/*Works*/
 
 	
 	/*Footer*/

@@ -8,13 +8,28 @@
     <meta name="keywords" content="DariKa,Front-end,Front End development,HTML,HTML 5,CSS,CSS3,javascript,Canvas,jQuery,Responsive Design, Development, Web Development, web разработчик">
     <meta name="author" content="DariKa">
 
-    <title>DariKa | Web Developer</title>
+    <title>DariKa | Front-end Developer</title>
 
-    <link href="assets/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Icons and sharing -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="image_src" href="assets/img/darika.png">
+
+
+    <meta property="og:title" content="DariKa | Front-end Developer">
+    <meta property="og:image" content="assets/img/darika.png">
+    <meta property="og:url" content="http://kadaria.github.io/">
+    <meta property="og:description" content="Личная страница, портфолио">
+
+    <meta name="twitter:site" content="DariKa | Front-end Developer">
+    <meta name="twitter:description" content="Личная страница, портфолио">
+    <meta name="twitter:image:src" content="assets/img/darika.png">
+    <meta name="twitter:domain" content="http://kadaria.github.io/">
+
 
     <!-- Custom styles for this template -->
     <link href="assets/css/grid.css" rel="stylesheet">
     <link href="assets/css/base.css" rel="stylesheet">
+    <link href="assets/css/simple-line-icons.css" rel="stylesheet">
     <link href="assets/css/darika.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
@@ -51,6 +66,7 @@
               <a href="#" class="mobile-navigation"><i class="icon-menu"></i></a>
               <ul class="navigation">
                 <li><a href="#about" class="">Обо мне</a></li>
+                <li><a href="#skills" class="">Навыки</a></li>
                 <li><a href="#works" class="">Работы</a></li>
                 <li><a href="#contact" class="">Контакты</a></li>
               </ul>
@@ -75,7 +91,7 @@
 
             <div class="inner">
               <h1 class="cufon">Дарья Казанцева</h1>
-              <p class="cufon-bold">Web-разработка</p>
+              <p class="cufon-bold">Front-end developer</p>
             </div>
 
           </div>
@@ -102,7 +118,7 @@
           
           <div class="sixteen columns about">
             <p>Привет!</p>
-            <p>Меня зовут Казанцева Дарья. Я живу в Перми, работаю веб-программистом. Программирование привлекало меня всегда и сейчас я занимаюсь именно тем, что мне нравится. В свободное время я изучаю новые технологии, фотографируюсь, катаюсь на сноуборде.</p>
+            <p>Меня зовут Дарья. Я живу в Перми, работаю веб-программистом. Программирование привлекало меня всегда и сейчас я занимаюсь именно тем, что мне нравится. В свободное время я изучаю новые технологии, фотографируюсь, катаюсь на сноуборде и путешествую.</p>
           </div>
 
         </div>
@@ -114,7 +130,7 @@
 
 
 
-    <section class="offset section skills">   
+    <section id="skills" class="offset section skills">   
       <!--Inner content-->
       <div class="innerContent">
         <!--Container-->
@@ -123,37 +139,38 @@
           <div class="four columns skills">
             <div class="inner">
               <div class="icon"><i class="icon-layers icons"></i></div>
-              <h2>HTML</h2>
+              <h2>Front-end</h2>
               <ul class="text">
-                <li>HTML5</li>
+                <li>HTML5 & CSS3</li>
                 <li>Bootstrap</li>
+                <li>JavaScript & JQuery</li>
                 <li>Jade</li>
-                <li>Верстка писем</li>
+                <li>Sass, Less, Stylus</li>
               </ul>
             </div>
           </div>
           
           
-          <div class="four columns skills">
-            <div class="inner">
-              <div class="icon"><i class="icon-note icons"></i></div>
-              <h2>CSS</h2>
-              <ul class="text">
-                <li>CSS3</li>
-                <li>Less</li>
-                <li>Sass</li>
-                <li>Stylus</li>
-              </ul>
-            </div>
-          </div>
-
-
           <div class="four columns skills">
             <div class="inner">
               <div class="icon"><i class="icon-settings icons"></i></div>
-              <h2>JavaScript</h2>
+              <h2>Back-end</h2>
               <ul class="text">
-                <li>jQuery</li>
+                <li>NodeJS</li>
+                <li>WordPress</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="four columns skills">
+            <div class="inner">
+              <div class="icon"><i class="icon-note icons"></i></div>
+              <h2>Дизайн</h2>
+              <ul class="text">
+                <li>Web-дизайн</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
               </ul>
             </div>
           </div>
@@ -163,10 +180,8 @@
               <div class="icon"><i class="icon-rocket icons"></i></div>
               <h2>А так же</h2>
               <ul class="text">
-                <li>Node.js</li>
-                <li>Wordpress</li>
+                <li>Grunt, Gulp</li>
                 <li>Git</li>
-                <li>Web-дизайн</li>
               </ul>
             </div>
           </div>
@@ -199,10 +214,6 @@
 
 
       <!--Inner content-->
-      <div class="work-preview" style="display:none"></div>
-
-
-      <!--Inner content-->
       <div class="innerContent">
           <!--Container-->
           <div class="container clearfix">
@@ -211,215 +222,187 @@
           <div class="container clearfix">
 
               <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-asper.html">
+              <div class="eight columns work">
+                <a href="http://playkey.net/" target="_blank" rel="nofollow">
+                  <img src="assets/img/playkey.png" alt="">
                   <div class="info">
                     <div class="inner">
-                      <h3>Asper</h3>
-                      <p>HTML5, Less</p>
+                      <h3>PlayKey.net</h3>
+                      <p>HTML5, Stylus, jQuery <span>2014</span></p>
                     </div>
                   </div>
-                  <img src="assets/img/asper_preview.png" alt="">
                 </a>
               </div>
               <!--Project-->
 
               <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-np1.html">
+              <div class="eight columns work">
+                <a href="http://newproject1.com/" target="_blank" rel="nofollow">
+                  <img src="assets/img/np1.png" alt="">
                   <div class="info">
                     <div class="inner">
-                      <h3>NewProject1</h3>
-                      <p>Дизайн, Jade, Less, jQuery, Node.js</p>
+                      <h3>NewProject1.com</h3>
+                      <p>Дизайн, Jade, Less, jQuery, Canvas, Node.js <span>2014</span></p>
                     </div>
                   </div>
-                  <img src="assets/img/newproject_preview.png" alt="">
                 </a>
               </div>
               <!--Project-->
 
               <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-playkey.html">
+              <div class="eight columns work">
+                <a href="http://dplitki.ru/" target="_blank" rel="nofollow">
+                  <img src="assets/img/plitka.png" alt="">
                   <div class="info">
                     <div class="inner">
-                      <h3>PlayKey</h3>
-                      <p>HTML5, Stylus, jQuery</p>
+                      <h3>dplitki.ru</h3>
+                      <p>HTML5, Stylus, jQuery <span>2015</span></p>
                     </div>
                   </div>
-                  <img src="assets/img/playkey_preview.png" alt="">
-                </a>
-              </div>
-              <!--Project-->
-
-          </div>
-          <!--Container-->
-
-
-          <!--Container-->
-          <div class="container clearfix">
-
-              <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-leolibro.html">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>LeoLibro</h3>
-                      <p>HTML5, Stylus, jQuery</p>
-                    </div>
-                  </div>
-                  <img src="assets/img/leolibro_preview.png" alt="">
                 </a>
               </div>
               <!--Project-->
 
               <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-elis.html">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>Elis-строй</h3>
-                      <p>Дизайн, HTML5, Stylus, jQuery</p>
-                    </div>
-                  </div>
-                  <img src="assets/img/elis_preview.png" alt="">
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-plitka.html">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>Студия плитки</h3>
-                      <p>HTML5, Stylus, jQuery</p>
-                    </div>
-                  </div>
-                  <img src="assets/img/plitka_preview.png" alt="">
-                </a>
-              </div>
-              <!--Project-->
-
-          </div>
-          <!--Container-->  
-
-
-          <!--Container-->
-          <div class="container clearfix">
-
-              <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-sm_site.html">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>Городские встречи</h3>
-                      <p>Дизайн, HTML5, Stylus, Wordpress</p>
-                    </div>
-                  </div>
-                  <img src="assets/img/sm_site_preview.png" alt="">
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-simakov.html">
+              <div class="eight columns work">
+                <a href="http://simakov.it/" target="_blank" rel="nofollow">
+                  <img src="assets/img/simakov.png" alt="">
                   <div class="info">
                     <div class="inner">
                       <h3>Simakov.it</h3>
-                      <p>Редизайн, Bootstrap, css, jQuery</p>
+                      <p>Редизайн, Bootstrap, Css, jQuery <span>2015</span></p>
                     </div>
                   </div>
-                  <img src="assets/img/simakov_preview.png" alt="">
                 </a>
               </div>
               <!--Project-->
 
               <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-svadba.html">
+              <div class="eight columns work">
+                <a href="http://alicestroy.ru/" target="_blank" rel="nofollow">
+                  <img src="assets/img/elis.png" alt="">
                   <div class="info">
                     <div class="inner">
-                      <h3>Свадьба плюс</h3>
-                      <p>HTML5, Sass</p>
+                      <h3>AliceStroy.ru</h3>
+                      <p>Дизайн, HTML5, Stylus, jQuery <span>2015</span></p>
                     </div>
                   </div>
-                  <img src="assets/img/svadba_preview.jpg" alt="">
                 </a>
               </div>
               <!--Project-->
 
-          </div>
-          <!--Container-->  
-
-
-          <!--Container-->
-          <div class="container clearfix">
+              <!--Project-->
+              <div class="eight columns work">
+                <a href="http://fightperm.ru/" target="_blank" rel="nofollow">
+                  <img src="assets/img/fc.png" alt="">
+                  <div class="info">
+                    <div class="inner">
+                      <h3>FightPerm.ru</h3>
+                      <p>Bootstrap, Jade, Css, JS <span>2015</span></p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!--Project-->
 
               <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-bus59.html">
+              <div class="eight columns work">
+                <a href="http://playkey.net/" target="_blank" rel="nofollow">
+                  <img src="assets/img/bus59.png" alt="">
                   <div class="info">
                     <div class="inner">
                       <h3>Автобус59.рф</h3>
-                      <p>Дизайн, Wordpress, Bootstrap, css</p>
+                      <p>Дизайн, Wordpress, Bootstrap, Css <span>2015</span></p>
                     </div>
                   </div>
-                  <img src="assets/img/bus59_preview.png" alt="">
                 </a>
               </div>
               <!--Project-->
 
               <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-kuznica.html">
+              <div class="eight columns work">
+                <a href="http://kuznica-idei.ru/" target="_blank" rel="nofollow">
+                  <img src="assets/img/kuznica.png" alt="">
                   <div class="info">
                     <div class="inner">
-                      <h3>Кузница</h3>
-                      <p>Дизайн, Bootstrap, Jade, css, jQuery</p>
+                      <h3>kuznica-idei.ru</h3>
+                      <p>Дизайн, Bootstrap, Jade, Css, jQuery <span>2015</span></p>
                     </div>
                   </div>
-                  <img src="assets/img/kuznica_preview.png" alt="">
                 </a>
               </div>
               <!--Project-->
 
               <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-daryma.html">
+              <div class="eight columns work">
+                <a href="http://svadba-plus.ru/" target="_blank" rel="nofollow">
+                  <img src="assets/img/svadba.png" alt="">
                   <div class="info">
                     <div class="inner">
-                      <h3>Дарума</h3>
-                      <p>Bootstrap, Jade, Sass, jQuery</p>
+                      <h3>svadba-plus.ru</h3>
+                      <p>HTML5, Sass <span>2015</span></p>
                     </div>
                   </div>
-                  <img src="assets/img/daryma_preview.png" alt="">
                 </a>
               </div>
               <!--Project-->
 
-          </div>
-          <!--Container-->  
-
-
-
-          <!--Container-->
-          <div class="container clearfix">
-
               <!--Project-->
-              <div class="one-third column work">
-                <a href="javascript:void(0)" data-url="work-fightperm.html">
+              <div class="eight columns work">
+                <a href="http://steelmuscles.ru/" target="_blank" rel="nofollow">
+                  <img src="assets/img/steelmuscles.png" alt="">
                   <div class="info">
                     <div class="inner">
-                      <h3>Бойцовские клубы</h3>
-                      <p>Bootstrap, Jade, css, JS</p>
+                      <h3>Steelmuscles.ru</h3>
+                      <p>Дизайн, Bootstrap, Jade, SCSS, jQuery, Node.js <span>2015</span></p>
                     </div>
                   </div>
-                  <img src="assets/img/fightperm_preview.png" alt="">
                 </a>
               </div>
               <!--Project-->
+
+              <!--Project-->
+              <div class="eight columns work">
+                <a href="http://franchgid.ru/" target="_blank" rel="nofollow">
+                  <img src="assets/img/franchise.png" alt="">
+                  <div class="info">
+                    <div class="inner">
+                      <h3>Franchgid.ru</h3>
+                      <p>Jade, Stylus, jQuery, Node.js <span>2015</span></p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!--Project-->
+
+              <!--Project-->
+              <div class="eight columns work">
+                <a href="http://qticket.ru/" target="_blank" rel="nofollow">
+                  <img src="assets/img/qticket.png" alt="">
+                  <div class="info">
+                    <div class="inner">
+                      <h3>Qticket.ru</h3>
+                      <p>Bootstrap, Jade, Stylus, jQuery, Node.js <span>2015</span></p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!--Project-->
+
+              <!--Project-->
+              <div class="eight columns work">
+                <a href="http://agf.club/" target="_blank" rel="nofollow">
+                  <img src="assets/img/agf.png" alt="">
+                  <div class="info">
+                    <div class="inner">
+                      <h3>agf.club</h3>
+                      <p>HTML, Css, jQuery <span>2015</span></p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!--Project-->
+
 
           </div>
           <!--Container-->  
@@ -442,9 +425,9 @@
 
             <div class="sixteen columns">
               <p>Дарья Казанцева</p>
-              <p>Россия, Пермь</p>
-              <p>+79194994204</p>
-              <p>skype: ka_darya</p>
+              <a href="tel:79194994204">+7 919 49 94 204</a>
+              <a href="skype:ka_darya?add">skype: ka_darya</a>
+              <a href="mailto:ppartesia@gmail.com">ppartesia@gmail.com</a>
             </div>
 
           </div>
@@ -473,7 +456,7 @@
 
           <div class="one-third column">
             <div class="footer-logo">DariKa</div>
-            <p class="footer-slogan">Сделано с любовью</p>
+            <p class="footer-slogan">Front-end developer</p>
           </div>
 
 
