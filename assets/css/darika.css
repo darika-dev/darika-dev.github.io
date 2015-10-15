@@ -856,6 +856,9 @@ div.footer .right li i {
 		width:250px;
 	}
 	/*Contact*/
+	div.contact-info a, div.contact-info p {
+		padding: 10px 0;
+	}
 
 	
 	/*Footer*/
