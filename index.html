@@ -1,522 +1,382 @@
 <!DOCTYPE html>
-<html lang="ru"><head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="text/html">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Личная страница, портфолио">
-    <meta name="keywords" content="DariKa,Front-end,Front End development,HTML,HTML 5,CSS,CSS3,javascript,Canvas,jQuery,Responsive Design, Development, Web Development, web разработчик">
-    <meta name="author" content="DariKa">
+        <meta name="description" content="DariKa - студия профессиональной web-разработки">
+        <meta name="keywords" content="DariKa, разработка сайтов, дизайн сайтов, контекстная реклама, заказать сайт, Responsive Design, Development, Web Development, web разработчик">
+        <meta name="author" content="DariKa">
 
-    <title>DariKa | Front-end Developer</title>
+        <title>DariKa | Web developer</title>
 
-    <!-- Icons and sharing -->
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
-    <link rel="image_src" href="assets/img/darika.jpg">
-
-
-    <meta property="og:title" content="Дарья Казанцева | DariKa">
-    <meta property="og:image" content="assets/img/darika.jpg">
-    <meta property="og:url" content="http://kadaria.github.io/">
-    <meta property="og:description" content="Портфолио">
-
-    <meta name="twitter:site" content="Дарья Казанцева | DariKa">
-    <meta name="twitter:description" content="Портфолио">
-    <meta name="twitter:image:src" content="assets/img/darika.jpg">
-    <meta name="twitter:domain" content="http://kadaria.github.io/">
+        <!-- Icons and sharing -->
+        <link rel="icon" type="image/png" href="img/icon.ico">
+        <link rel="image_src" href="img/projects/darika.jpg">
 
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/grid.css" rel="stylesheet">
-    <link href="assets/css/base.css" rel="stylesheet">
-    <link href="assets/css/simple-line-icons.css" rel="stylesheet">
-    <link href="assets/css/darika.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <meta property="og:title" content="DariKa | Мы делаем красивые сайты">
+        <meta property="og:image" content="img/projects/darika.jpg">
+        <meta property="og:url" content="http://kadaria.github.io/">
+        <meta property="og:description" content="Мы занимаемся веб-дизайном, разработкой сайтов и продвижением сайтов.">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <meta name="twitter:site" content="DariKa | Мы делаем красивые сайты">
+        <meta name="twitter:description" content="Мы занимаемся веб-дизайном, разработкой сайтов и продвижением сайтов.">
+        <meta name="twitter:image:src" content="img/projects/darika.jpg">
+        <meta name="twitter:domain" content="http://kadaria.github.io/">
 
 
+        <!-- Custom styles for this template -->
+        <link href="css/base.css" rel="stylesheet">
 
-  </head>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.7.8/evil-icons.min.css">
+        <script src="https://cdn.jsdelivr.net/evil-icons/1.7.8/evil-icons.min.js"></script>
 
-  <body data-spy="scroll" data-target="#navbar">
-  <div id="loader"></div>
-  <div id="wrapper">
+    </head>
 
-
-    <header id="header">
-      <!--Main header-->
-      <div class="header">
-          
-        <!--Container-->
-        <div class="container clearfix">
-          <div class="one-third column">
-            <!--Logo-->
-            <div class="logo">DariKa</div>
-            <!--Logo-->
-          </div>
-          
-          <div class="two-thirds column">
-            <!--Navigation-->
-            <nav id="navigation">
-              <a href="#" class="mobile-navigation"><i class="icon-menu"></i></a>
-              <ul class="navigation">
-                <li><a href="#about" class="">Обо мне</a></li>
-                <li><a href="#skills" class="">Навыки</a></li>
-                <li><a href="#works" class="">Работы</a></li>
-                <li><a href="#contact" class="">Контакты</a></li>
-              </ul>
-            </nav>
-            <!--Navigation-->
-          </div>
-        </div>
-        <!--Container-->
+    <body>
+      <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
       </div>
-      <!--Main header-->
-    </header>
 
 
+        <nav>
+            <a class="logo scroll" href="body">DK</a>
+            <a href="#contacts" class="scroll">Контакты</a>
+            <a href="#work" class="scroll">Портфолио</a>
+            <a href="#skills" class="scroll">Навыки</a>
+        </nav>
 
+        <header>
+            <h1>Дарья Казанцева</h1>
+            <h2>Web developer</h2>
+            <a href="#skills" class="scroll">
+                <svg>
+                    <polygon xmlns="http://www.w3.org/2000/svg" fill="#fff" points="9.7, 11.1 0, 1.4 1.4,0 9.7, 8.3 18, 0 19.4, 1.4"></polygon>
+                </svg>
+            </a>
+            <video id="video" preload="auto" autoplay="true" loop="loop" muted="" volume="0">
+                <source src="video/videohero.ogv" type="video/ogg">
+                <source src="video/videohero.mp4" type="video/mp4">
+            </video>
+        </header>
 
-    <section id="home" class="home"style="height: 421px;">
-      <!--Image-->
-      <div class="image">
-        <div class="overlay"style="height: 421px;">
+        <article id="skills">
+            <section>
+                <div class="container">
+                    <h1>Дизайн &<br>Разработка</h1>
+                    <p>Программирование привлекало меня всегда и сейчас я занимаюсь именно тем, что мне нравится. Мне интересно создавать красивые сайты и я всегда рада новым сложным проектам.</p>
+                    <ul>
+                        <li>
+                            <img src="img/ico-webdesign.png">
+                            <h2>Дизайн</h2>
+                            <p>Web-дизайн</p>
+                            <p>Adobe Photoshop</p>
+                            <p>Adobe Illustrator</p>
+                            <p>Sketch</p>
+                        </li>
+                        <li>
+                            <img src="img/ico-dev.png">
+                            <h2>Front-end</h2>
+                            <p>HTML5 & CSS3</p>
+                            <p>Bootstrap</p>
+                            <p>JavaScript & JQuery</p>
+                            <p>Jade</p>
+                            <p>Sass, Less, Stylus</p>
+                        </li>
+                        <li>
+                            <img src="img/partner.png">
+                            <h2>Back-end</h2>
+                            <p>NodeJS</p>
+                            <p>PHP</p>
+                            <p>WordPress</p>
+                        </li>
+                        <li>
+                            <img src="img/quality.png">
+                            <h2>А так же</h2>
+                            <p>Grunt, Gulp</p>
+                            <p>Git</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
 
-          <div class="text"style="height: 421px;">
+        <article id="work">
+            <h1>Портфолио<span></span></h1>
+            <ul class="container">
+              <li>
+                  <img src="img/projects/playkey.png" alt="">
+                  <div class="about"><div>
+                    <h2>PlayKey</h2>
+                    <label>PlayKey.net</label>
+                    <p>Кроссбраузерная, адаптивная верстка сайта</p>
+                    <span>HTML5</span>
+                    <span>Stylus</span>
+                    <span>jQuery</span>
+                    <label>2014</label>
+                  </div></div>
+              </li>
+              <!--Project-->
+              <li>
+                <img src="img/projects/np1.png" alt="">
+                <div class="about"><div>
+                  <h2>NewProject1</h2>
+                  <label>NewProject1.com</label>
+                  <p>Разработка корпоративного сайта</p>
+                  <span>Дизайн</span>
+                  <span>Jade</span>
+                  <span>CSS</span>
+                  <span>Canvas</span>
+                  <span>jQuery</span>
+                  <label>2014</label>
+                </div></div>
+              </li>
+              <!--Project-->
 
-            <div class="inner">
-              <h1 class="cufon">Дарья Казанцева</h1>
-              <p class="cufon-bold">Front-end developer</p>
+              <!--Project-->
+              <li>
+                <img src="img/projects/plitka.png" alt="">
+                <div class="about"><div>
+                  <h2>Студия плитки</h2>
+                  <label>dplitki.ru</label>
+                  <p>Верстка главной страницы</p>
+                  <span>HTML5</span>
+                  <span>Stylus</span>
+                  <span>jQuery</span>
+                  <label>2015</label>
+                </div></div>
+              </li>
+              <!--Project-->
+
+              <!--Project-->
+              <li class="mobile_hide">
+                <img src="img/projects/simakov.png" alt="">
+                <div class="about"><div>
+                  <h2>Simakov</h2>
+                  <label>Simakov.it</label>
+                  <p>Редизайн портфолио iOS-разработчика</p>
+                  <span>Редизайн</span>
+                  <span>Bootstrap</span>
+                  <span>Css</span>
+                  <span>jQuery</span>
+                  <label>2015</label>
+                </div></div>
+              </li>
+              <!--Project-->
+
+              <!--Project-->
+              <li class="mobile_hide">
+                <img src="img/projects/elis.png" alt="">
+                <div class="about"><div>
+                  <h2>Элис-строй</h2>
+                  <label>AliceStroy.ru</label>
+                  <p>Разработка сайта для строительной фирмы</p>
+                  <span>Дизайн</span>
+                  <span>HTML5</span>
+                  <span>Stylus</span>
+                  <span>jQuery</span>
+                  <label>2015</label>
+                </div></div>
+              </li>
+              <!--Project-->
+
+              <!--Project-->
+              <li class="mobile_hide">
+                <img src="img/projects/fc.png" alt="">
+                <div class="about"><div>
+                  <h2>Бойцовский клуб</h2>
+                  <label>FightPerm.ru</label>
+                  <p>Вёрстка сайта для спортивного клуба</p>
+                  <span>Bootstrap</span>
+                  <span>Jade</span>
+                  <span>Css</span>
+                  <span>JS</span>
+                  <label>2015</label>
+                </div></div>
+              </li>
+              <!--Project-->
+
+              <!--Project-->
+              <li class="mobile_hide">
+                <img src="img/projects/bus59.png" alt="">
+                <div class="about"><div>
+                  <h2>Аренда автобусов</h2>
+                  <label>Автобус59.рф</label>
+                  <p>Разработка сайта на Wordpress</p>
+                  <span>Дизайн</span>
+                  <span>Bootstrap</span>
+                  <span>Css</span>
+                  <span>Wordpress</span>
+                  <label>2015</label>
+                </div></div>
+              </li>
+              <!--Project-->
+
+              <!--Project-->
+              <li class="mobile_hide">
+                <img src="img/projects/kuznica.png" alt="">
+                <div class="about"><div>
+                  <h2>Кузница</h2>
+                  <label>kuznica-idei.ru</label>
+                  <p>Разработка сайта для кузницы</p>
+                  <span>Дизайн</span>
+                  <span>Bootstrap</span>
+                  <span>Jade</span>
+                  <span>Css</span>
+                  <span>jQuery</span>
+                  <label>2015</label>
+                </div></div>
+              </li>
+              <!--Project-->
+
+              <!--Project-->
+              <li>
+                <img src="img/projects/svadba.png" alt="">
+                <div class="about"><div>
+                  <h2>Свадьба Plus</h2>
+                  <label>svadba-plus.ru</label>
+                  <p>Кроссбраузерная верстка</p>
+                  <span>HTML5</span>
+                  <span>Sass</span>
+                  <label>2015</label>
+                </div></div>
+              </li>
+              <!--Project-->
+
+              <!--Project-->
+              <li>
+                <img src="img/projects/steelmuscles.png" alt="">
+                <div class="about"><div>
+                  <h2>SteelPower</h2>
+                  <label>Steelmuscles.ru</label>
+                  <p>Разработка сайта спортивного питания</p>
+                  <span>Дизайн</span>
+                  <span>Bootstrap</span>
+                  <span>Jade</span>
+                  <span>SCSS</span>
+                  <span>jQuery</span>
+                  <span>Node.js</span>
+                  <label>2015</label>
+                </div></div>
+              </li>
+              <!--Project-->
+
+              <!--Project-->
+              <li class="mobile_hide">
+                <img src="img/projects/franchise.png" alt="">
+                <div class="about"><div>
+                  <h2>FranchGid</h2>
+                  <label>Franchgid.ru</label>
+                  <p>Разработка сайта для каталога франшиз</p>
+                  <span>Дизайн</span>
+                  <span>Jade</span>
+                  <span>Stylus</span>
+                  <span>jQuery</span>
+                  <span>Node.js</span>
+                  <label>2015</label>
+                </div></div>
+              </li>
+              <!--Project-->
+
+              <!--Project-->
+              <li>
+                <img src="img/projects/qticket.png" alt="">
+                <div class="about"><div>
+                  <h2>Q-ticket</h2>
+                  <label>q-ticket.ru</label>
+                  <p>Разработка сайта для организатора концертов</p>
+                  <span>Bootstrap</span>
+                  <span>Jade</span>
+                  <span>Stylus</span>
+                  <span>jQuery</span>
+                  <span>Node.js</span>
+                  <label>2015</label>
+                </div></div>
+              </li>
+              <!--Project-->
+
+              <li>
+                <img src="img/projects/agf.png">
+                <div class="about"><div>
+                  <h2>Арена</h2>
+                  <label>agf.club</label>
+                  <p>Разработка сайта и контекстной рекламы для фитнес-клуба</p>
+                  <span>HTML5</span>
+                  <span>CSS</span>
+                  <span>jQuery</span>
+                  <span>PHP</span>
+                  <span>Контекстная реклама</span>
+                  <span>Аналитика</span>
+                  <label>2015</label>
+                </div></div>
+              </li>
+
+              <li>
+                <img src="img/projects/skan.png">
+                <div class="about"><div>
+                  <h2>Скань</h2>
+                  <label> </label>
+                  <p>Разработка рекламной страницы для сети магазинов ювелирных украшений</p>
+                  <span>HTML5</span>
+                  <span>CSS</span>
+                  <span>jQuery</span>
+                  <label>2015</label>
+                </div></div>
+              </li>
+              <li>
+                <img src="img/projects/phoenix.png">
+                <div class="about"><div>
+                  <h2>Феникс</h2>
+                  <label>fxprm.ru</label>
+                  <p>Разработка сайта</p>
+                  <span>HTML5</span>
+                  <span>CSS</span>
+                  <span>jQuery</span>
+                  <span>PHP</span>
+                </div></div>
+              </li>
+            </ul>
+        </article>
+
+        <article id="contacts">
+            <h1>Контакты</h1>
+            <div class="container_s">
+              <a href="https://github.com/kadaria" target="_blank">
+                <i data-icon="ei-sc-github" data-size="m"></i>
+              </a>
+              <a href="https://vk.com/ka_daria" target="_blank">
+                <i data-icon="ei-sc-vk" data-size="m"></i>
+              </li>
+              <a href="https://ru.linkedin.com/in/kadaria" target="_blank">
+                <i data-icon="ei-sc-linkedin" data-size="m"></i>
+              </a>
+              <a href="https://www.facebook.com/kadaria.ru" target="_blank">
+                <i data-icon="ei-sc-facebook" data-size="m"></i>
+              </a>
+              <a href="http://www.twitter.com/lDari_Ka" target="_blank">
+                <i data-icon="ei-sc-twitter" data-size="m"></i>
+              </a>
+              <br>
+              <a href="tel:+78000000000">+7 919 49 94 204</a>
+              <a href="mailto:">for@darika.io</a>
             </div>
-
-          </div>
-
-          <div class="arrow">
-            <a href="#about">Узнать больше обо мне!</a>
-          </div>
-
-        </div>
-
-      </div>
-      <!--Image-->
-
-    </section>
-
-
-
-    <section id="about" class="offset section about">
-      <!--Inner content-->
-      <div class="innerContent">
-        
-        <!--Container-->
-        <div class="container clearfix">
-          
-          <div class="sixteen columns about">
-            <p>Привет!</p>
-            <p>Меня зовут Дарья. Я живу в Перми, работаю веб-программистом. Программирование привлекало меня всегда и сейчас я занимаюсь именно тем, что мне нравится. В свободное время я изучаю новые технологии, фотографируюсь, катаюсь на сноуборде и путешествую.</p>
-          </div>
-
-        </div>
-        <!--Container-->
-      </div>
-      <!--Inner content-->
-    </section>
-
-
-
-
-    <section id="skills" class="offset section skills">   
-      <!--Inner content-->
-      <div class="innerContent">
-        <!--Container-->
-        <div class="container clearfix">
-          
-          <div class="four columns skills">
-            <div class="inner">
-              <div class="icon"><i class="icon-layers icons"></i></div>
-              <h2>Front-end</h2>
-              <ul class="text">
-                <li>HTML5 & CSS3</li>
-                <li>Bootstrap</li>
-                <li>JavaScript & JQuery</li>
-                <li>Jade</li>
-                <li>Sass, Less, Stylus</li>
-              </ul>
-            </div>
-          </div>
-          
-          
-          <div class="four columns skills">
-            <div class="inner">
-              <div class="icon"><i class="icon-settings icons"></i></div>
-              <h2>Back-end</h2>
-              <ul class="text">
-                <li>NodeJS</li>
-                <li>WordPress</li>
-              </ul>
-            </div>
-          </div>
-
-
-          <div class="four columns skills">
-            <div class="inner">
-              <div class="icon"><i class="icon-note icons"></i></div>
-              <h2>Дизайн</h2>
-              <ul class="text">
-                <li>Web-дизайн</li>
-                <li>Adobe Photoshop</li>
-                <li>Adobe Illustrator</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="four columns skills">
-            <div class="inner">
-              <div class="icon"><i class="icon-rocket icons"></i></div>
-              <h2>А так же</h2>
-              <ul class="text">
-                <li>Grunt, Gulp</li>
-                <li>Git</li>
-              </ul>
-            </div>
-          </div>
-          
-          
-        </div>
-        <!--Container-->
-      </div>
-      <!--Inner content-->            
-    </section>
-
-
-
-
-
-    <section id="works" class="offset section works">
-      <!--Inner content-->
-      <div class="innerContent">
-        <!--Container-->
-        <div class="container clearfix">
-          
-          <div class="sixteen columns">
-            <h1 class="title cufon-bold">Мои работы</h1>
-          </div>
-
-        </div>
-        <!--Container-->
-      </div>
-      <!--Inner content-->
-
-
-      <!--Inner content-->
-      <div class="innerContent">
-          <!--Container-->
-          <div class="container clearfix">
-
-          <!--Container-->
-          <div class="container clearfix">
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://playkey.net/" target="_blank" rel="nofollow">
-                  <img src="assets/img/playkey.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>PlayKey.net</h3>
-                      <p>HTML5, Stylus, jQuery <span>2014</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://newproject1.com/" target="_blank" rel="nofollow">
-                  <img src="assets/img/np1.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>NewProject1.com</h3>
-                      <p>Дизайн, Jade, Less, jQuery, Canvas, Node.js <span>2014</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://dplitki.ru/" target="_blank" rel="nofollow">
-                  <img src="assets/img/plitka.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>dplitki.ru</h3>
-                      <p>HTML5, Stylus, jQuery <span>2015</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://simakov.it/" target="_blank" rel="nofollow">
-                  <img src="assets/img/simakov.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>Simakov.it</h3>
-                      <p>Редизайн, Bootstrap, Css, jQuery <span>2015</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://alicestroy.ru/" target="_blank" rel="nofollow">
-                  <img src="assets/img/elis.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>AliceStroy.ru</h3>
-                      <p>Дизайн, HTML5, Stylus, jQuery <span>2015</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://fightperm.ru/" target="_blank" rel="nofollow">
-                  <img src="assets/img/fc.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>FightPerm.ru</h3>
-                      <p>Bootstrap, Jade, Css, JS <span>2015</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://bus59.com/" target="_blank" rel="nofollow">
-                  <img src="assets/img/bus59.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>Автобус59.рф</h3>
-                      <p>Дизайн, Wordpress, Bootstrap, Css <span>2015</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://kuznica-idei.ru/" target="_blank" rel="nofollow">
-                  <img src="assets/img/kuznica.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>kuznica-idei.ru</h3>
-                      <p>Дизайн, Bootstrap, Jade, Css, jQuery <span>2015</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://svadba-plus.ru/" target="_blank" rel="nofollow">
-                  <img src="assets/img/svadba.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>svadba-plus.ru</h3>
-                      <p>HTML5, Sass <span>2015</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://steelmuscles.ru/" target="_blank" rel="nofollow">
-                  <img src="assets/img/steelmuscles.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>Steelmuscles.ru</h3>
-                      <p>Дизайн, Bootstrap, Jade, SCSS, jQuery, Node.js <span>2015</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://franchgid.ru/" target="_blank" rel="nofollow">
-                  <img src="assets/img/franchise.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>Franchgid.ru</h3>
-                      <p>Jade, Stylus, jQuery, Node.js <span>2015</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://qticket.ru/" target="_blank" rel="nofollow">
-                  <img src="assets/img/qticket.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>Qticket.ru</h3>
-                      <p>Bootstrap, Jade, Stylus, jQuery, Node.js <span>2015</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-              <!--Project-->
-              <div class="eight columns work">
-                <a href="http://agf.club/" target="_blank" rel="nofollow">
-                  <img src="assets/img/agf.png" alt="">
-                  <div class="info">
-                    <div class="inner">
-                      <h3>agf.club</h3>
-                      <p>HTML, Css, jQuery <span>2015</span></p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <!--Project-->
-
-
-          </div>
-          <!--Container-->  
-
-        </div>
-        <!--Container-->
-      </div>
-      <!--Inner content-->
-    </section>
-
-
-
-    <section id="contact" class="section contact">
-      <!--Overlay-->
-      <div class="overlay offset contact-info">
-        <!--Inner content-->
-        <div class="innerContent">
-          <!--Container-->
-          <div class="container clearfix">
-
-            <div class="sixteen columns">
-              <p>Дарья Казанцева</p>
-              <a href="tel:79194994204">+7 919 49 94 204</a>
-              <a href="skype:ka_darya?add">skype: ka_darya</a>
-              <a href="mailto:ppartesia@gmail.com">ppartesia@gmail.com</a>
-            </div>
-
-          </div>
-          <!--Container-->
-
-        </div>
-        <!--Inner content-->
-
-      </div>
-      <!--Overlay-->
-
-    </section>
-
-
-
-
-    <footer class="footer">
-      <!--Bottom footer-->
-      <div class="footer">
-        <!--Container-->
-        <div class="container clearfix">
-
-          <div class="sixteen columns arrow">
-            <a href="#home">На верх</a>
-          </div>
-
-          <div class="one-third column">
-            <div class="footer-logo">DariKa</div>
-            <p class="footer-slogan">Front-end developer</p>
-          </div>
-
-
-          <div class="two-thirds column">
-            <div class="right social">
-              <ul>
-                <li class="github" data-url="https://github.com/kadaria"><i class="step icon-github-circled size-24"></i></li>
-                <li class="vk" data-url="https://vk.com/ka_daria"><i class="step icon-vk size-24"></i></li>
-                <li class="linkedin" data-url="https://ru.linkedin.com/in/kadaria"><i class="step icon-linkedin size-24"></i></li>
-                <li class="facebook" data-url="https://www.facebook.com/kadaria.ru"><i class="step icon-facebook size-24"></i></li>
-                <li class="twitter" data-url="http://www.twitter.com/lDari_Ka"><i class="step icon-twitter size-24"></i></li>
-              </ul>
-            </div>
-          </div>
-            
-        </div>
-        <!--Container-->
-      </div>
-      <!--End bottom footer-->
-
-    </footer>
-
-
-</div>
-
-
-<!--Javascript-->
-<script src="./assets/js/jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="./assets/js/jquery.color-2.1.2.min.js"></script>
-<script src="./assets/js/jquery.scrollTo-min.js" type="text/javascript"></script>
-<script src="./assets/js/waypoints.js" type="text/javascript"></script>
-<script src="./assets/js/darika.js" type="text/javascript"></script>
-<!--Javascript-->
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter29959039 = new Ya.Metrika({id:29959039,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-        } catch(e) { }
-    });
-
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/29959039" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-</body></html>
+            <span></span>
+        </article>
+
+        <footer>
+            <img src="img/stamp.png">
+            <cite>&copy; DariKa</cite>
+        </footer>
+
+
+        <!-- JavaScript-->
+        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
