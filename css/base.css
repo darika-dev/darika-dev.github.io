@@ -45,7 +45,6 @@ nav {
 nav a {
     text-decoration: none;
     padding: 0 30px;
-    float: right;
     font: 1em/4.5em Roboto;
     font-weight: 300;
     color: #fff;
@@ -53,15 +52,21 @@ nav a {
 nav a:hover {
     color: #00D0CC;
 }
-nav a:nth-child(2) {
-    padding-right: 0;
-}
 nav a.logo {
     float: left;
     padding: 0;
     font: 3em/1.5em 'Poiret One', cursive;
     letter-spacing: -18px;
     color: #00D0CC;
+}
+nav .nav-right {
+    float: right;
+}
+nav .nav-right a:first-of-type {
+    padding-left: 0;
+}
+nav .nav-right a:last-of-type {
+    padding-right: 0;
 }
 
 
@@ -540,12 +545,12 @@ footer cite {
         float: none;
         display: inline-block;
     }
-    nav a:nth-child(2) {
-        padding-right: 15px;
-    }
     nav a.logo {
         display: none;
         letter-spacing: -12px;
+    }
+    nav .nav-right {
+        float: none;
     }
 
     article#skills section {
