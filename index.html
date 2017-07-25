@@ -1,428 +1,528 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="text/html">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
 
-        <meta name="description" content="DariKa | портфолио">
-        <meta name="keywords" content="DariKa, Казанцева Дарья, разработка сайтов, дизайн сайтов, контекстная реклама, заказать сайт, Responsive Design, Development, Web Development, web разработчик">
-        <meta name="author" content="DariKa">
+<head>
+    <!-- Hello! My E-mail is to@darika.it -->
+    <meta charset="utf-8" />
+    <title>DariKa | Front-end developer</title>
+    <meta name="author" content="DariKa">
+    <meta name="description" content="Personal web-page">
+    <meta name="keywords" content="DariKa, Kazantceva Daria, Казанцева Дарья, дизайн сайтов, заказать сайт, Responsive Design, Development, Front-end Development, web разработчик">
 
-        <title>DariKa | Web developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <!-- Icons and sharing -->
-        <link rel="icon" type="image/png" href="img/icon.ico">
-        <link rel="image_src" href="img/darika.jpg">
+    <link rel="apple-touch-icon" sizes="57x57" href="/media/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/media/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/media/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/media/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/media/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/media/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/media/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/media/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/media/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/media/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/media/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/media/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
+    <meta property="og:url" content="http://darika.it/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/media/img/darika.jpg" />
+    <meta property="og:title" content="DariKa | Front-end developer" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:description" content="Personal web-page" />
+    <meta property="og:site_name" content="DariKa" />
 
-        <meta property="og:title" content="DariKa | Web-developer">
-        <meta property="og:image" content="img/darika.jpg">
-        <meta property="og:url" content="http://kadaria.github.io/">
-        <meta property="og:description" content="Я занимаюсь веб-дизайном и разработкой сайтов. Мне интересно создавать красивые сайты и я всегда рада новым сложным проектам.">
-
-        <meta name="twitter:site" content="DariKa | Web-developer">
-        <meta name="twitter:description" content="Я занимаюсь веб-дизайном и разработкой сайтов. Мне интересно создавать красивые сайты и я всегда рада новым сложным проектам.">
-        <meta name="twitter:image:src" content="img/darika.jpg">
-        <meta name="twitter:domain" content="http://kadaria.github.io/">
-
-
-        <!-- Custom styles for this template -->
-        <link href="css/base.css" rel="stylesheet">
-
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Poiret+One&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.7.8/evil-icons.min.css">
-        <script src="https://cdn.jsdelivr.net/evil-icons/1.7.8/evil-icons.min.js"></script>
-
-    </head>
-
-    <body>
-      <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-      </div>
+    <meta name="twitter:title" content="DariKa | Front-end developer">
+    <meta name="twitter:description" content="Personal web-page">
+    <meta name="twitter:image" content="/media/img/darika.jpg">
+    <meta name="twitter:card" content="summary_large_image">
 
 
-        <nav>
-            <a class="logo scroll" href="body">DK</a>
-            <div class="nav-right">
-              <a href="#skills" class="scroll">Навыки</a>
-              <a href="#work" class="scroll">Портфолио</a>
-              <a href="#contacts" class="scroll">Контакты</a>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|family=Fira+Mono|Roboto:100,300,400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/evil-icons/1.9.0/evil-icons.min.js"></script>
+
+    <link rel="stylesheet" href="media/css/screen.css" />
+</head>
+
+<body>
+    <div class="loader" data-loader>
+        <div class="loader__icon"></div>
+        <div class="loader__section _left"></div>
+        <div class="loader__section _right"></div>
+    </div>
+    <nav class="nav" data-nav>
+        <div class="skin">
+            <a href="body" class="nav__logo" data-scroll-to="body">DK</a>
+            <ul class="nav__links nav-links _right">
+                <li class="nav-links__item">
+                    <a href="#skills" data-scroll-to="#skills" class="nav-links__link">Skills</a>
+                </li>
+                <li class="nav-links__item">
+                    <a href="#projects" data-scroll-to="#projects" class="nav-links__link">Projects</a>
+                </li>
+                <li class="nav-links__item">
+                    <a href="#contacts" data-scroll-to="#contacts" class="nav-links__link">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="header__wrap">
+                <div class="skin">
+                    <h1 class="header__title">Daria Kazantceva</h1>
+                    <p class="header__info">Front-end developer</p>
+                </div>
             </div>
-        </nav>
-
-        <header>
-            <h1>Дарья Казанцева</h1>
-            <h2>Web developer</h2>
-            <a href="#skills" class="scroll">
-                <svg>
-                    <polygon xmlns="http://www.w3.org/2000/svg" fill="#fff" points="9.7, 11.1 0, 1.4 1.4,0 9.7, 8.3 18, 0 19.4, 1.4"></polygon>
-                </svg>
-            </a>
-            <video id="video" preload="auto" autoplay="true" loop="loop" muted="" volume="0" poster="img/img-services.jpg">
-                <source src="video/videohero.ogv" type="video/ogg">
-                <source src="video/videohero.mp4" type="video/mp4">
-                <img src="img/img-services.jpg">
-            </video>
         </header>
 
-        <article id="skills">
-            <section>
-                <div class="container">
-                    <h1>Дизайн &<br>Разработка</h1>
-                    <p>Программирование привлекало меня всегда и сейчас я занимаюсь именно тем, что мне нравится. Мне интересно создавать красивые сайты и я всегда рада новым сложным проектам.</p>
-                    <ul>
-                        <li>
-                            <img src="img/ico-webdesign.png">
-                            <h2>Дизайн</h2>
-                            <p>Web-дизайн</p>
-                            <p>Adobe Photoshop</p>
-                            <p>Adobe Illustrator</p>
-                            <p>Sketch</p>
+        <section class="section skills" id="skills">
+            <div class="skin">
+                <div class="row">
+                    <div class="col-lg-6 col-md-5 col-sm-6 col-xs-12 _middle">
+                        <h2 class="skills__title title">Why development?</h2>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 offset-md-1 col-xs-12 offset-sm-0 _middle">
+                        <p class="skills__lead lead">I&nbsp;started to&nbsp;be&nbsp;interested in&nbsp;programming at&nbsp;school and now&nbsp;I have turned that passion into a&nbsp;career. I&nbsp;enjoy transforming design in&nbsp;simple and beautiful code and always excited for
+                            the next challenge in&nbsp;a&nbsp;new project.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="skills__list skills-list">
+                            <div class="skills-list__icon">
+                                <svg class="skills-list__icon-svg">
+                                    <use xlink:href="#icon-design"></use>
+                                </svg>
+                            </div>
+                            <div class="skills-list__title">Design</div>
+                            <div class="skills-list__item">Web-design</div>
+                            <div class="skills-list__item">Adobe Photoshop</div>
+                            <div class="skills-list__item">Adobe Illustrator</div>
+                            <div class="skills-list__item">Sketch</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="skills__list skills-list">
+                            <div class="skills-list__icon">
+                                <svg class="skills-list__icon-svg _front">
+                                    <use xlink:href="#icon-front"></use>
+                                </svg>
+                            </div>
+                            <div class="skills-list__title">Front-end</div>
+                            <div class="skills-list__item">HTML5 & CSS3</div>
+                            <div class="skills-list__item">JavaScript & JQuery</div>
+                            <div class="skills-list__item">Jade, Nunjucks</div>
+                            <div class="skills-list__item">Sass, Less, Stylus</div>
+                            <div class="skills-list__item _small">Bootstrap, d3.js, TweenMax
+                                <br>Responsive or Adaptive
+                                <br>Cross-browser</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="skills__list skills-list">
+                            <div class="skills-list__icon">
+                                <svg class="skills-list__icon-svg">
+                                    <use xlink:href="#icon-tools"></use>
+                                </svg>
+                            </div>
+                            <div class="skills-list__title">Tools</div>
+                            <div class="skills-list__item">Grunt, Gulp</div>
+                            <div class="skills-list__item">Webpack</div>
+                            <div class="skills-list__item">Git</div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="skills__list skills-list">
+                            <div class="skills-list__icon">
+                                <svg class="skills-list__icon-svg">
+                                    <use xlink:href="#icon-back"></use>
+                                </svg>
+                            </div>
+                            <div class="skills-list__title">Back-end</div>
+                            <div class="skills-list__item">NodeJS</div>
+                            <div class="skills-list__item">PHP</div>
+                            <div class="skills-list__item">WordPress</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section projects" id="projects">
+            <div class="skin">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12 _middle">
+                        <div class="projects__title title">Projects</div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12 _middle">
+                        <div class="projects__lead lead">For the past year&nbsp;I have been working for the <a href="#" class="lead__link">Sborka Project</a> and many of&nbsp;the projects are under NDA.</div>
+                    </div>
+                </div>
+                <div class="row projects__list projects-list">
+                    <div class="col-lg-12">
+                        <div class="projects-list__item project _big">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-8 col-sm-12 _middle">
+                                    <a href="http://fotomashina.com/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/fotomashina.png)"></a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12 _middle">
+                                    <div class="project__info">
+                                        <div class="project__date">2017</div>
+                                        <a href="http://fotomashina.com/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>fotomashina.com</a>
+                                        <ul class="project__tags project-tags">
+                                            <li class="project-tags__item">Nunjucks</li>
+                                            <li class="project-tags__item">SASS</li>
+                                            <li class="project-tags__item">JS</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="projects-list__item project _big">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-8 col-sm-12 _middle">
+                                    <a href="https://praxisadvance.com/happy2017/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/praxisadvance.png)"></a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12 _middle">
+                                    <div class="project__info">
+                                        <div class="project__date">2016</div>
+                                        <a href="https://praxisadvance.com/happy2017/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>praxisadvance.com/happy2017</a>
+                                        <ul class="project__tags project-tags">
+                                            <li class="project-tags__item">Nunjucks</li>
+                                            <li class="project-tags__item">SASS</li>
+                                            <li class="project-tags__item">JS</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="projects-list__item project _big">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-8 col-sm-12 _middle">
+                                    <a href="https://gorky.media/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/gorky.png)"></a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12 _middle">
+                                    <div class="project__info">
+                                        <div class="project__date">2016</div>
+                                        <a href="https://gorky.media/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>gorky.media</a>
+                                        <ul class="project__tags project-tags">
+                                            <li class="project-tags__item">Jade</li>
+                                            <li class="project-tags__item">SASS</li>
+                                            <li class="project-tags__item">jQuery</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="projects-list__item project _big">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-8 col-sm-12 _middle">
+                                    <a href="http://mywhitey.ru/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/mywhitey.png)"></a>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12 _middle">
+                                    <div class="project__info">
+                                        <div class="project__date">2016</div>
+                                        <a href="http://mywhitey.ru/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>mywhitey.ru</a>
+                                        <ul class="project__tags project-tags">
+                                            <li class="project-tags__item">HTML5</li>
+                                            <li class="project-tags__item">CSS</li>
+                                            <li class="project-tags__item">jQuery</li>
+                                            <li class="project-tags__item">Web audio</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="projects__subtitle subtitle">Another projects</div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="projects-list__item project">
+                            <a href="http://fxprm.ru/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/fxprm.png)"></a>
+                            <div class="project__info">
+                                <div class="project__date">2015</div>
+                                <a href="http://fxprm.ru/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>fxprm.ru</a>
+                                <ul class="project__tags project-tags">
+                                    <li class="project-tags__item">HTML5</li>
+                                    <li class="project-tags__item">CSS</li>
+                                    <li class="project-tags__item">jQuery</li>
+                                    <li class="project-tags__item">PHP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 hidden-xs">
+                        <div class="projects-list__item project">
+                            <div class="project__bg" style="background-image: url(/media/img/projects/skan.png)"></div>
+                            <div class="project__info">
+                                <div class="project__date">2015</div>
+                                <div class="project__link _no-hover"><i class="project__link-icon" data-icon="ei-close"></i>no link</div>
+                                <ul class="project__tags project-tags">
+                                    <li class="project-tags__item">Design</li>
+                                    <li class="project-tags__item">HTML5</li>
+                                    <li class="project-tags__item">CSS</li>
+                                    <li class="project-tags__item">jQuery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="projects-list__item project">
+                            <a href="http://agf.club/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/agf.png)"></a>
+                            <div class="project__info">
+                                <div class="project__date">2015</div>
+                                <a href="http://agf.club/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>agf.club</a>
+                                <ul class="project__tags project-tags">
+                                    <li class="project-tags__item">HTML5</li>
+                                    <li class="project-tags__item">CSS</li>
+                                    <li class="project-tags__item">jQuery</li>
+                                    <li class="project-tags__item">PHP</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 hidden-xs">
+                        <div class="projects-list__item project">
+                            <a href="http://franchgid.ru/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/franchgid.png)"></a>
+                            <div class="project__info">
+                                <div class="project__date">2015</div>
+                                <a href="http://franchgid.ru/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>franchgid.ru</a>
+                                <ul class="project__tags project-tags">
+                                    <li class="project-tags__item">Design</li>
+                                    <li class="project-tags__item">Jade</li>
+                                    <li class="project-tags__item">Stylus</li>
+                                    <li class="project-tags__item">jQuery</li>
+                                    <li class="project-tags__item">Node.js</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="projects-list__item project">
+                            <a href="http://steelmuscles.ru/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/steelmuscles.png)"></a>
+                            <div class="project__info">
+                                <div class="project__date">2015</div>
+                                <a href="http://steelmuscles.ru/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>steelmuscles.ru</a>
+                                <ul class="project__tags project-tags">
+                                    <li class="project-tags__item">Design</li>
+                                    <li class="project-tags__item">Bootstrap</li>
+                                    <li class="project-tags__item">Jade</li>
+                                    <li class="project-tags__item">SCSS</li>
+                                    <li class="project-tags__item">jQuery</li>
+                                    <li class="project-tags__item">Node.js</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 hidden-xs">
+                        <div class="projects-list__item project">
+                            <a href="http://svadba-plus.ru/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/svadba.jpg)"></a>
+                            <div class="project__info">
+                                <div class="project__date">2015</div>
+                                <a href="http://svadba-plus.ru/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>svadba-plus.ru</a>
+                                <ul class="project__tags project-tags">
+                                    <li class="project-tags__item">HTML5</li>
+                                    <li class="project-tags__item">SASS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 hidden-xs">
+                        <div class="projects-list__item project">
+                            <div class="project__bg" style="background-image: url(/media/img/projects/bus59.png)"></div>
+                            <div class="project__info">
+                                <div class="project__date">2015</div>
+                                <div class="project__link _no-hover"><i class="project__link-icon" data-icon="ei-close"></i>no link</div>
+                                <ul class="project__tags project-tags">
+                                    <li class="project-tags__item">Design</li>
+                                    <li class="project-tags__item">HTML5</li>
+                                    <li class="project-tags__item">CSS</li>
+                                    <li class="project-tags__item">jQuery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 hidden-xs">
+                        <div class="projects-list__item project">
+                            <a href="http://fightperm.ru/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/fightperm.png)"></a>
+                            <div class="project__info">
+                                <div class="project__date">2015</div>
+                                <a href="http://fightperm.ru/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>fightperm.ru</a>
+                                <ul class="project__tags project-tags">
+                                    <li class="project-tags__item">Bootstrap</li>
+                                    <li class="project-tags__item">Jade</li>
+                                    <li class="project-tags__item">CSS</li>
+                                    <li class="project-tags__item">JS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 hidden-xs">
+                        <div class="projects-list__item project">
+                            <a href="http://simakov.it/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/simakov.png)"></a>
+                            <div class="project__info">
+                                <div class="project__date">2015</div>
+                                <a href="http://simakov.it/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>simakov.it</a>
+                                <ul class="project__tags project-tags">
+                                    <li class="project-tags__item">reDesign</li>
+                                    <li class="project-tags__item">Bootstrap</li>
+                                    <li class="project-tags__item">CSS</li>
+                                    <li class="project-tags__item">jQuery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="projects-list__item project">
+                            <a href="http://dplitki.ru/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/dplitki.png)"></a>
+                            <div class="project__info">
+                                <div class="project__date">2015</div>
+                                <a href="http://dplitki.ru/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>dplitki.ru</a>
+                                <ul class="project__tags project-tags">
+                                    <li class="project-tags__item">reDesign</li>
+                                    <li class="project-tags__item">Bootstrap</li>
+                                    <li class="project-tags__item">CSS</li>
+                                    <li class="project-tags__item">jQuery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="projects-list__item project">
+                            <div class="project__bg" style="background-image: url(/media/img/projects/newproject.png)"></div>
+                            <div class="project__info">
+                                <div class="project__date">2014</div>
+                                <div class="project__link _no-hover"><i class="project__link-icon" data-icon="ei-close"></i>no link</div>
+                                <ul class="project__tags project-tags">
+                                    <li class="project-tags__item">Design</li>
+                                    <li class="project-tags__item">Jade</li>
+                                    <li class="project-tags__item">CSS</li>
+                                    <li class="project-tags__item">Canvas</li>
+                                    <li class="project-tags__item">jQuery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12">
+                        <div class="projects-list__item project">
+                            <a href="https://playkey.net/" target="_blank" class="project__bg" style="background-image: url(/media/img/projects/playkey.png)"></a>
+                            <div class="project__info">
+                                <div class="project__date">2014</div>
+                                <a href="https://playkey.net/" target="_blank" class="project__link"><i class="project__link-icon" data-icon="ei-link"></i>playkey.net</a>
+                                <ul class="project__tags project-tags">
+                                    <li class="project-tags__item">HTML5</li>
+                                    <li class="project-tags__item">Stylus</li>
+                                    <li class="project-tags__item">jQuery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section contacts" id="contacts">
+            <div class="contacts__wrap">
+                <div class="skin">
+                    <ul class="contacts__list contacts-list">
+                        <li class="contacts-list__item">
+                            <a class="contacts-list__link" href="https://t.me/kadaria" target="_blank">
+                                <i data-icon="ei-sc-telegram" data-size="m"></i>
+                            </a>
                         </li>
-                        <li>
-                            <img src="img/ico-dev.png">
-                            <h2>Front-end</h2>
-                            <p>HTML5 & CSS3</p>
-                            <p>Bootstrap</p>
-                            <p>JavaScript & JQuery</p>
-                            <p>Jade</p>
-                            <p>Sass, Less, Stylus</p>
+                        <li class="contacts-list__item">
+                            <a class="contacts-list__link" href="https://github.com/kadaria" target="_blank">
+                                <i data-icon="ei-sc-github" data-size="m"></i>
+                            </a>
                         </li>
-                        <li>
-                            <img src="img/partner.png">
-                            <h2>Back-end</h2>
-                            <p>NodeJS</p>
-                            <p>PHP</p>
-                            <p>WordPress</p>
+                        <li class="contacts-list__item">
+                            <a class="contacts-list__link" href="https://ru.linkedin.com/in/kadaria" target="_blank">
+                                <i data-icon="ei-sc-linkedin" data-size="m"></i>
+                            </a>
                         </li>
-                        <li>
-                            <img src="img/quality.png">
-                            <h2>А так же</h2>
-                            <p>Grunt, Gulp</p>
-                            <p>Git</p>
+                        <li class="contacts-list__item">
+                            <a class="contacts-list__link" href="https://vk.com/ka_daria" target="_blank">
+                                <i data-icon="ei-sc-vk" data-size="m"></i>
+                            </a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a class="contacts-list__link" href="https://www.facebook.com/kadaria.ru" target="_blank">
+                                <i data-icon="ei-sc-facebook" data-size="m"></i>
+                            </a>
+                        </li>
+                        <li class="contacts-list__item">
+                            <a class="contacts-list__link" href="http://www.twitter.com/lDari_Ka" target="_blank">
+                                <i data-icon="ei-sc-twitter" data-size="m"></i>
+                            </a>
+                        </li>
+                        <li class="contacts-list__item _email">
+                            <a class="contacts-list__link _email" href="mailto:to@darika.it">to@darika.it</a>
                         </li>
                     </ul>
                 </div>
-            </section>
-        </article>
-
-        <article id="work">
-            <h1>Портфолио<span></span></h1>
-            <ul class="container">
-
-              <li>
-                <img src="img/projects/traders.png">
-                <div class="about"><div>
-                  <h2>Traders</h2>
-                  <!-- <a href="http://mywhite.ru" target="_blank">mywhite.ru</a> -->
-                  <!-- <p>Разработка веб-приложения для трейдеров</p> -->
-                  <span>HTML5</span>
-                  <span>CSS</span>
-                  <span>Angular.js</span>
-                  <span>d3.js</span>
-                  <label>2016</label>
-                </div></div>
-              </li>
-
-              <li>
-                <img src="img/projects/mywhite.png">
-                <div class="about"><div>
-                  <h2>Мой белый</h2>
-                  <a href="http://mywhitey.ru/" target="_blank">mywhitey.ru</a>
-                  <p>Разработка сайта. Проект «Мой белый» посвящен манифесту, клипу и лонгмиксу рэп-исполнителя Ива</p>
-                  <span>HTML5</span>
-                  <span>CSS</span>
-                  <span>jQuery</span>
-                  <span>Web audio</span>
-                  <label>2016</label>
-                </div></div>
-              </li>
-
-              <li>
-                <img src="img/projects/phoenix.png">
-                <div class="about"><div>
-                  <h2>Феникс</h2>
-                  <a href="http://fxprm.ru" target="_blank">fxprm.ru</a>
-                  <p>Разработка сайта</p>
-                  <span>HTML5</span>
-                  <span>CSS</span>
-                  <span>jQuery</span>
-                  <span>PHP</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li>
-                <img src="img/projects/skan.png">
-                <div class="about"><div>
-                  <h2>Скань</h2>
-                  <!-- <a href="#"></a> -->
-                  <p>Разработка рекламной страницы для сети магазинов ювелирных украшений</p>
-                  <span>Дизайн</span>
-                  <span>HTML5</span>
-                  <span>CSS</span>
-                  <span>jQuery</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li>
-                <img src="img/projects/agf.png">
-                <div class="about"><div>
-                  <h2>Арена</h2>
-                  <a href="http://agf.club" target="_blank">agf.club</a>
-                  <p>Разработка сайта и контекстной рекламы для фитнес-клуба</p>
-                  <span>HTML5</span>
-                  <span>CSS</span>
-                  <span>jQuery</span>
-                  <span>PHP</span>
-                  <span>Контекстная реклама</span>
-                  <span>Аналитика</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li>
-                <img src="img/projects/qticket.png" alt="">
-                <div class="about"><div>
-                  <h2>Q-ticket</h2>
-                  <a href="http://q-ticket.ru/" target="_blank">q-ticket.ru</a>
-                  <p>Разработка сайта для организатора концертов</p>
-                  <span>Bootstrap</span>
-                  <span>Jade</span>
-                  <span>Stylus</span>
-                  <span>jQuery</span>
-                  <span>Node.js</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li class="mobile_hide">
-                <img src="img/projects/franchise.png" alt="">
-                <div class="about"><div>
-                  <h2>FranchGid</h2>
-                  <a href="http://franchgid.ru" target="_blank">Franchgid.ru</a>
-                  <p>Разработка сайта для каталога франшиз</p>
-                  <span>Дизайн</span>
-                  <span>Jade</span>
-                  <span>Stylus</span>
-                  <span>jQuery</span>
-                  <span>Node.js</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li>
-                <img src="img/projects/steelmuscles.png" alt="">
-                <div class="about"><div>
-                  <h2>SteelPower</h2>
-                  <a href="http://steelmuscles.ru" target="_blank">Steelmuscles.ru</a>
-                  <p>Разработка сайта спортивного питания</p>
-                  <span>Дизайн</span>
-                  <span>Bootstrap</span>
-                  <span>Jade</span>
-                  <span>SCSS</span>
-                  <span>jQuery</span>
-                  <span>Node.js</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li>
-                <img src="img/projects/svadba.png" alt="">
-                <div class="about"><div>
-                  <h2>Свадьба Plus</h2>
-                  <a href="http://svadba-plus.ru" target="_blank">svadba-plus.ru</a>
-                  <p>Кроссбраузерная верстка</p>
-                  <span>HTML5</span>
-                  <span>Sass</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li class="mobile_hide">
-                <img src="img/projects/kuznica.png" alt="">
-                <div class="about"><div>
-                  <h2>Кузница</h2>
-                  <a href="http://kuznica-idei.ru" target="_blank">kuznica-idei.ru</a>
-                  <p>Разработка сайта для кузницы</p>
-                  <span>Дизайн</span>
-                  <span>Bootstrap</span>
-                  <span>Jade</span>
-                  <span>Css</span>
-                  <span>jQuery</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li class="mobile_hide">
-                <img src="img/projects/bus59.png" alt="">
-                <div class="about"><div>
-                  <h2>Аренда автобусов</h2>
-                  <a href="http://bus59.com/" target="_blank">Автобус59.рф</a>
-                  <p>Разработка сайта на Wordpress</p>
-                  <span>Дизайн</span>
-                  <span>Bootstrap</span>
-                  <span>Css</span>
-                  <span>Wordpress</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li class="mobile_hide">
-                <img src="img/projects/fc.png" alt="">
-                <div class="about"><div>
-                  <h2>Бойцовский клуб</h2>
-                  <a href="http://fightperm.ru" target="_blank">FightPerm.ru</a>
-                  <p>Вёрстка сайта для спортивного клуба</p>
-                  <span>Bootstrap</span>
-                  <span>Jade</span>
-                  <span>Css</span>
-                  <span>JS</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li class="mobile_hide">
-                <img src="img/projects/elis.png" alt="">
-                <div class="about"><div>
-                  <h2>Элис-строй</h2>
-                  <a href="http://alicestroy.ru" target="_blank">AliceStroy.ru</a>
-                  <p>Разработка сайта для строительной фирмы</p>
-                  <span>Дизайн</span>
-                  <span>HTML5</span>
-                  <span>Stylus</span>
-                  <span>jQuery</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li class="mobile_hide">
-                <img src="img/projects/simakov.png" alt="">
-                <div class="about"><div>
-                  <h2>Simakov</h2>
-                  <a href="http://simakov.it" target="_blank">Simakov.it</a>
-                  <p>Редизайн портфолио iOS-разработчика</p>
-                  <span>Редизайн</span>
-                  <span>Bootstrap</span>
-                  <span>Css</span>
-                  <span>jQuery</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li>
-                <img src="img/projects/plitka.png" alt="">
-                <div class="about"><div>
-                  <h2>Студия плитки</h2>
-                  <a href="http://dplitki.ru" target="_blank">dplitki.ru</a>
-                  <p>Верстка главной страницы</p>
-                  <span>HTML5</span>
-                  <span>Stylus</span>
-                  <span>jQuery</span>
-                  <label>2015</label>
-                </div></div>
-              </li>
-
-              <li>
-                <img src="img/projects/np1.png" alt="">
-                <div class="about"><div>
-                  <h2>NewProject1</h2>
-                  <a href="http://newproject1.com" target="_blank">NewProject1.com</a>
-                  <p>Разработка корпоративного сайта</p>
-                  <span>Дизайн</span>
-                  <span>Jade</span>
-                  <span>CSS</span>
-                  <span>Canvas</span>
-                  <span>jQuery</span>
-                  <label>2014</label>
-                </div></div>
-              </li>
-
-              <li>
-                  <img src="img/projects/playkey.png" alt="">
-                  <div class="about"><div>
-                    <h2>PlayKey</h2>
-                    <a href="http://playkey.net" target="_blank">PlayKey.net</a>
-                    <p>Кроссбраузерная, адаптивная верстка сайта</p>
-                    <span>HTML5</span>
-                    <span>Stylus</span>
-                    <span>jQuery</span>
-                    <label>2014</label>
-                  </div></div>
-              </li>
-
-
-            </ul>
-        </article>
-
-        <article id="contacts">
-            <h1>Контакты</h1>
-            <div class="container_s">
-              <a href="https://github.com/kadaria" target="_blank">
-                <i data-icon="ei-sc-github" data-size="m"></i>
-              </a>
-              <a href="https://vk.com/ka_daria" target="_blank">
-                <i data-icon="ei-sc-vk" data-size="m"></i>
-              </li>
-              <a href="https://ru.linkedin.com/in/kadaria" target="_blank">
-                <i data-icon="ei-sc-linkedin" data-size="m"></i>
-              </a>
-              <a href="https://www.facebook.com/kadaria.ru" target="_blank">
-                <i data-icon="ei-sc-facebook" data-size="m"></i>
-              </a>
-              <a href="http://www.twitter.com/lDari_Ka" target="_blank">
-                <i data-icon="ei-sc-twitter" data-size="m"></i>
-              </a>
-              <br>
-              <!-- <a href="tel:+79194994204">+7 919 49 94 204</a> -->
-              <a href="mailto:to@darika.it">to@darika.it</a>
             </div>
-            <span></span>
-        </article>
+        </section>
 
-        <footer>
-            <img src="img/stamp.png">
-            <cite>&copy; DariKa</cite>
-        </footer>
+        <div class="wrapper__push"></div>
+    </div>
 
+    <footer class="footer">
+        <div class="skin">
+            <img class="footer__stamp" src="media/img/stamp.png">
+            <cite class="footer__copy">&copy; DariKa</cite>
+        </div>
+    </footer>
 
-        <!-- JavaScript-->
-        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+    <script src="media/js/main.js"></script>
 
-        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript">
-            (function (d, w, c) {
-                (w[c] = w[c] || []).push(function() {
-                    try {
-                        w.yaCounter29959039 = new Ya.Metrika({
-                            id:29959039,
-                            clickmap:true,
-                            trackLinks:true,
-                            accurateTrackBounce:true,
-                            webvisor:true
-                        });
-                    } catch(e) { }
-                });
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+          (function (d, w, c) {
+              (w[c] = w[c] || []).push(function() {
+                  try {
+                      w.yaCounter29959039 = new Ya.Metrika({
+                          id:29959039,
+                          clickmap:true,
+                          trackLinks:true,
+                          accurateTrackBounce:true,
+                          webvisor:true
+                      });
+                  } catch(e) { }
+              });
 
-                var n = d.getElementsByTagName("script")[0],
-                    s = d.createElement("script"),
-                    f = function () { n.parentNode.insertBefore(s, n); };
-                s.type = "text/javascript";
-                s.async = true;
-                s.src = "https://mc.yandex.ru/metrika/watch.js";
+              var n = d.getElementsByTagName("script")[0],
+                  s = d.createElement("script"),
+                  f = function () { n.parentNode.insertBefore(s, n); };
+              s.type = "text/javascript";
+              s.async = true;
+              s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-                if (w.opera == "[object Opera]") {
-                    d.addEventListener("DOMContentLoaded", f, false);
-                } else { f(); }
-            })(document, window, "yandex_metrika_callbacks");
-        </script>
-        <noscript><div><img src="https://mc.yandex.ru/watch/29959039" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-        <!-- /Yandex.Metrika counter -->
-    </body>
+              if (w.opera == "[object Opera]") {
+                  d.addEventListener("DOMContentLoaded", f, false);
+              } else { f(); }
+          })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/29959039" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+</body>
+
 </html>
