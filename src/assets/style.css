@@ -1,0 +1,31 @@
+html, body {
+  background-color: theme('colors.black');
+  color: theme('colors.white');
+}
+
+@font-face {
+  font-family: 'Montreal';
+  src: url(/fonts/PPNeueMontreal-Book.woff2) format("woff2"),
+      url(/fonts/PPNeueMontreal-Book.woff) format("woff");
+  font-weight: book;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montreal';
+  src: url(/fonts/PPNeueMontreal-Medium.woff2) format("woff2"),
+      url(/fonts/PPNeueMontreal-Medium.woff) format("woff");
+  font-weight: medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(/fonts/playfair_italic.woff2) format("woff2"),
+      url(/fonts/playfair_italic.woff) format("woff");
+  font-display: swap;
+}
+
+i {
+  font-family: 'Playfair Display';
+}
