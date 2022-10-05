@@ -4,6 +4,7 @@ import { gsap, Expo } from 'gsap/dist/gsap'
 
 import DkSocial from './common/DkSocial.vue'
 import DkSection from './ui/DkSection.vue'
+import DkAnimation from './common/DkAnimation.vue';
 
 const titleMiddle = ref()
 const titleBottom = ref()
@@ -32,7 +33,8 @@ onMounted(() => {
   <DkSection class="flex flex-col items-center justify-between">
     <div></div>
 
-    <div class="relative">
+    <DkAnimation />
+    <div class="">
       <h2 class="text-4xl md:text-8xl font-medium uppercase mix-blend-difference">
         <span class="block text-center">Senior</span>
         <span ref="titleMiddle" class="left block text-left">Front-end</span>
