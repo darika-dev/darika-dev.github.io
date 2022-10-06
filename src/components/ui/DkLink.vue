@@ -21,21 +21,37 @@ const isExternalLink = computed(() => {
 </script>
 
 <template>
-  <a
+  <!-- <a
     v-if="isExternalLink"
     v-bind="$attrs"
     :href="path as string"
     target="_blank"
-    class="link relative text-xs sm:text-base leading-4 uppercase"
+    class="link block relative text-xs sm:text-base leading-4 uppercase"
     :title="text"
   >
     <div>
       <span v-for="letter, key in innerText" :key="key" :style="`--index: ${key}`" class="letter">
         {{ letter }}</span>
     </div>
-    <div class="absolute left-0 top-0 whitespace-nowrap" aria-hidden="true">
+    <div class=" whitespace-nowrap" aria-hidden="true">
       <i v-for="letter, key in innerText" :key="`clone_${key}`" :style="`--index: ${key}`" class="letter _clone">
         {{ letter }}</i>
+    </div>
+  </a> -->
+  <a
+    v-bind="$attrs"
+    :href="path as string"
+    target="_blank"
+    class="menu-item link block relative text-xs sm:text-base leading-4 uppercase"
+    :title="text"
+  >
+    <div>
+      <span v-for="letter, key in innerText" :key="key" :style="`--index: ${key}`" class="letter">
+        {{ letter }}</span>
+    </div>
+    <div class="hover-clone absolute left-0 top-0 whitespace-nowrap">
+      <span v-for="letter, key in innerText" :key="`clone_${key}`" :style="`--index: ${key}`" class="letter _clone">
+        {{ letter }}</span>
     </div>
   </a>
 </template>
@@ -52,6 +68,7 @@ const isExternalLink = computed(() => {
 .letter._clone {
   transform-origin: bottom;
   transform: translateY(-100%) rotateX(-90deg);
+  font-family: Playfair Display, serif;
 }
 
 .link:hover .letter {
