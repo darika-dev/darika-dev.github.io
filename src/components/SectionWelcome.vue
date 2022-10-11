@@ -16,13 +16,11 @@ onMounted(() => {
 
   tl.to(titleMiddle.value, {
     x: "-15%",
-    delay: .7,
     duration: 1.5,
     ease: Expo.easeInOut
   }, "show"),
   tl.to(titleBottom.value, {
     x: "18%",
-    delay: .7,
     duration: 1.5,
     ease: Expo.easeInOut
   }, "show")
@@ -31,9 +29,10 @@ onMounted(() => {
 
 <template>
   <DkSection class="flex flex-col items-center justify-between">
+    <DkAnimation />
+
     <div></div>
 
-    <DkAnimation />
     <div class="">
       <h2 class="text-4xl md:text-8xl font-medium uppercase mix-blend-difference">
         <span class="block text-center">Senior</span>
@@ -42,7 +41,7 @@ onMounted(() => {
       </h2>
     </div>
 
-    <div class="mt-10 w-full flex flex-col sm:flex-row justify-between items-center">
+    <div class="relative mt-10 w-full flex flex-col sm:flex-row justify-between items-center">
       <DkSocial class="mb-2 sm:mb-0" />
       <a href="mailto:to@darika.dev" class="transition-colors text-xs sm:text-base font-light hover:text-neon">to@darika.dev</a>
     </div>
