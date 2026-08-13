@@ -12,7 +12,7 @@ const links: Link[] = [
     path: 'https://www.linkedin.com/in/kadaria/',
   },
   {
-    name: 'Github',
+    name: 'GitHub',
     path: 'https://github.com/darika-dev',
   },
   {
@@ -21,7 +21,7 @@ const links: Link[] = [
   },
   {
     name: 'Telegram',
-    path: 'https://t.me/kadaria',
+    path: 'https://t.me/darika_dev',
   },
 ]
 </script>

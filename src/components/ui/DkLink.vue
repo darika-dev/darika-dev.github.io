@@ -38,12 +38,12 @@ const isExternalLink = computed(() => {
         {{ letter }}</i>
     </div>
   </a> -->
-  <a
+  <router-link
     v-bind="$attrs"
-    :href="path as string"
-    target="_blank"
+    :to="path as string"
+    :alt="name as string"
     class="menu-item link block relative text-xs sm:text-base leading-4 uppercase"
-    :title="text"
+    activeClass="pointer-events-none"
   >
     <div>
       <span v-for="letter, key in innerText" :key="key" :style="`--index: ${key}`" class="letter">
@@ -53,7 +53,7 @@ const isExternalLink = computed(() => {
       <span v-for="letter, key in innerText" :key="`clone_${key}`" :style="`--index: ${key}`" class="letter _clone">
         {{ letter }}</span>
     </div>
-  </a>
+  </router-link>
 </template>
 
 <style scoped lang="postcss">

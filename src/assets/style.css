@@ -1,6 +1,13 @@
 html, body {
   background-color: theme('colors.black');
-  color: theme('colors.white');
+  color: theme('colors.gray.100');
+}
+
+@media print {
+  html, body {
+    background-color: theme('colors.white');
+    color: theme('colors.black');
+  }
 }
 
 @font-face {

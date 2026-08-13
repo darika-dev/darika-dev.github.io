@@ -1,14 +1,18 @@
-<script setup>
+<script lang="ts">
+export default {
+  name: 'IndexView'
+}
+</script>
+
+<script lang="ts" setup>
 import DkNavbar from './components/common/DkNavbar.vue'
-import DkSeparatorMobile from './components/ui/DkSeparatorMobile.vue'
-import SectionWelcome from './components/SectionWelcome.vue'
 </script>
 
 <template>
   <div>
     <DkNavbar />
     <div class="relative">
-      <SectionWelcome />
+      <router-view />
     </div>
   </div>
 </template>
