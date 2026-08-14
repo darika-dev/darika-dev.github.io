@@ -128,7 +128,7 @@ const skills = [
         <li
           v-for="item in set.list"
           :key="item"
-          class="py-1 px-2 bg-gray-700 border border-neon/20 rounded print:text-sm print:border-0 print:p-0 print:after:content-[',']"
+          class="py-1 px-2 bg-gray-700 border border-neon/20 rounded print:text-sm print:border-0 print:p-0 print:after:content-[','] print:last:after:hidden"
         >
           <span class="inline-block pb-[1px]">
             {{ item }}
