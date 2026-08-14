@@ -9,13 +9,13 @@ const experience = [
     company: 'Intensity Labs',
     companyLink: 'https://www.intensitylabs.ai',
     description: {
-      info: 'Owned frontend architecture, technical decisions, implementation, third-party integrations, and production delivery for complex Web3 applications built with React, Next.js, and TypeScript.',
+      info: 'Sole frontend engineer responsible for frontend architecture, UI/UX, implementation, integrations, and quality across Web3 applications built with React, Next.js, and TypeScript.',
       list: [
-        'Led the architecture and production delivery of <strong>Dextra Terminal</strong>, a cross-chain swap application built with <strong>React, Next.js, and TypeScript</strong>.',
-        'Implemented cross-chain transaction flows across <strong>EVM and Solana</strong>, including wallet connections, token balances, allowances, approvals, network switching, blockchain interactions, error handling, and external API integrations.',
-        'Established reusable UI components and application patterns that supported maintainable, scalable feature development.',
-        'Shipped a <strong>Telegram Mini App for cross-chain swaps</strong>, adapting wallet interactions, transaction flows, state management, and API integrations to the Telegram environment.',
-        'Took <strong>Shogun95</strong> from concept to production, creating a Windows 95-inspired interface with reusable interactive components and <strong>CSS animations</strong>.'
+        'Architected and built <strong>Dextra Terminal</strong>, an embeddable cross-chain swap widget supporting <strong>four networks: Ethereum, Base, Arbitrum, and Solana</strong>.',
+        'Engineered end-to-end cross-chain transaction flows across <strong>EVM and Solana</strong>, including wallet connectivity, balances, allowances, approvals, network switching, transaction states, error handling, and external API integrations.',
+        'Designed and implemented a reusable UI system with <strong>30+ components</strong> using <strong>Radix UI</strong> primitives, including keyboard navigation, TypeScript type safety, theming, and Framer Motion animations.',
+        'Built a separate <strong>Telegram Mini App for cross-chain swaps</strong>, implementing wallet interactions, transaction flows, state management, and API integrations for the Telegram environment.',
+        'Delivered additional interactive products, including an <strong>iGaming Telegram Mini App</strong> and multiple product landing pages, owning frontend implementation from UI development through integration.'
       ]
     }
   },
@@ -26,13 +26,13 @@ const experience = [
     company: 'Umee',
     companyLink: 'https://ux.xyz/',
     description: {
-      info: 'Delivered scalable web and mobile DeFi products with React, React Native, Next.js, TypeScript, and GraphQL, focusing on frontend architecture, blockchain workflows, and reusable design systems.',
+      info: 'Built web and mobile DeFi products with React, React Native, Next.js, TypeScript, and GraphQL, spanning frontend architecture, blockchain integrations, testing, and reusable UI systems.',
       list: [
-        'Led the frontend rebuild of <strong>Umee 2.0</strong> with <strong>React, Next.js, TypeScript, GraphQL, and Storybook</strong>, creating a more maintainable foundation for product development.',
-        'Developed <strong>Tabu Wallet</strong>, a React Native mobile crypto wallet with authentication, navigation, animations, complex transaction flows, and <strong>Ledger hardware-wallet integration</strong>.',
-        'Built and maintained a shared UI kit and design system used across multiple products, improving UI consistency and reducing duplicated frontend implementation.',
-        'Integrated GraphQL APIs and blockchain infrastructure for data-driven DeFi workflows.',
-        'Delivered interactive product experiences, including Tabu Wallet and DORA landing pages, using <strong>GSAP, ScrollTrigger</strong>, responsive layouts, and custom UI interactions.'
+        'Led the frontend refactoring of <strong>Umee 2.0</strong>, restructuring a difficult-to-scale legacy codebase and addressing performance and maintainability issues with <strong>React, Next.js, TypeScript, and GraphQL</strong>.',
+        'Introduced <strong>Storybook, automated testing, and reusable UI patterns</strong> into a codebase that previously lacked component documentation and automated test coverage, improving development and release workflows.',
+        'Built <strong>Tabu Wallet</strong>, a React Native crypto wallet for <strong>iOS and Android supporting 40+ blockchain networks</strong>, with authentication, navigation, animations, complex transaction flows, and Ledger hardware-wallet integration.',
+        'Built a shared <strong>UI kit with 20+ reusable components</strong>, standardizing common interface patterns and reducing duplicated frontend implementation.',
+        'Delivered interactive product experiences, including the <strong>Tabu Wallet and DORA landing pages</strong>, using GSAP, ScrollTrigger, responsive layouts, and custom UI interactions.'
       ]
     }
   },
@@ -43,12 +43,12 @@ const experience = [
     company: 'Ignite (formerly Tendermint)',
     companyLink: 'https://ignite.com/',
     description: {
-      info: 'Built open-source Web3 applications and reusable UI systems for the Cosmos blockchain ecosystem using Vue, Nuxt, TypeScript, Tailwind CSS, Pinia, and Storybook.',
+      info: 'Sole frontend engineer embedded in the design team, responsible for implementing web applications, interactive experiences, and reusable UI systems across the Cosmos ecosystem.',
       list: [
-        'Developed a decentralized application for the Blockchain Accelerator Platform, building frontend workflows for interacting with <strong>Cosmos SDK</strong> infrastructure.',
-        'Created a reusable UI kit and shared component library adopted across multiple products, improving consistency and accelerating feature delivery.',
-        'Delivered <strong>10+ production websites and web applications</strong> across the Cosmos ecosystem, including Cosmos.network, Ignite, Emeris, Starport, Ojo Network, and Archway.',
-        'Built responsive, highly interactive interfaces with <strong>Vue, Nuxt, TypeScript, Three.js, and WebGL</strong>.'
+        'Built the frontend of the <strong>Blockchain Accelerator Platform from scratch</strong>, translating product designs into a production-ready UI for subsequent blockchain integration by the engineering team.',
+        'Implemented a reusable <strong>UI kit for Cosmos SDK applications</strong> from the design system, using <strong>Vue, TypeScript, Tailwind CSS, and Storybook</strong> to provide reusable components for blockchain application interfaces.',
+        'Independently delivered frontend work across <strong>10+ production websites and web applications</strong> in the Cosmos ecosystem, including Cosmos.network, Ignite, Emeris, Starport, Ojo Network, and Archway.',
+        'Built interactive, animation-heavy interfaces with <strong>Vue, Nuxt, TypeScript, Three.js, and WebGL</strong>, including performance optimization of complex animations for Emeris.'
       ]
     }
   },
@@ -59,28 +59,29 @@ const experience = [
     company: 'Xsolla',
     companyLink: 'https://xsolla.com/',
     description: {
-      info: 'Developed B2B fintech, payment, and publishing platforms with Angular, React, TypeScript, Redux, and Jest.',
+      info: 'Sole frontend engineer for the subscriptions domain within a 12-person product team, building B2B payment and subscription-management workflows with React, Redux, TypeScript, and Jest.',
       list: [
-        'Maintained <strong>Payment Gate</strong>, an Angular payment application supporting complex payment workflows.',
-        'Delivered React and Redux features for <strong>Publisher Account</strong>, supporting product, payment, and publishing operations for business customers.',
-        'Contributed to the migration from a monolithic frontend to <strong>microfrontends</strong>, improving scalability and independent feature delivery.',
-        'Expanded automated test coverage with <strong>Jest</strong>, refactored legacy code, and reduced frontend technical debt.',
-        'Led code reviews and mentored junior frontend developers, contributing to engineering standards and code quality.'
+        'Owned frontend development of the <strong>Publisher Account subscriptions module</strong>, building complex forms and dashboards for creating, editing, managing, and configuring renewal workflows for subscription products.',
+        'Increased <strong>Jest test coverage for the Publisher Account subscriptions module to 85%</strong> while refactoring legacy code and reducing technical debt.',
+        'Extracted the <strong>subscriptions module from a monolithic frontend into an independently deployable microfrontend</strong>, enabling the subscriptions team to develop and release its frontend independently.',
+        'Regularly reviewed code for <strong>three frontend developers</strong> in the Payments team and mentored <strong>two junior frontend developers</strong>, contributing to frontend quality and engineering practices.',
+        'Maintained and extended <strong>Payment Gate</strong>, an Angular-based payment application, handling frontend bug fixes and feature improvements alongside subscriptions development.'
       ]
     }
   },
 
   {
     title: 'Frontend Developer',
-    date: 'Jan 2019 – Apr 2020',
+    date: 'Jan 2019 - Apr 2020',
     company: 'Hot-WiFi',
     companyLink: 'https://hot-wifi.ru/',
     description: {
-      info: 'Built customer-facing web applications, dashboards, and network-management interfaces for a guest WiFi platform using React, Redux, JavaScript, SCSS, and PostCSS.',
+      info: 'Built customer-facing web applications and embedded network-management interfaces for a guest WiFi platform as part of a two-person frontend team.',
       list: [
-        'Developed a configuration interface running directly on <strong>MikroTik devices</strong> to support guest WiFi setup.',
-        'Built customer dashboards and public WiFi interfaces, simplifying network management and user onboarding.',
-        'Delivered responsive marketing websites for the product.'
+        'Designed and built from scratch a <strong>configuration interface running directly on MikroTik devices</strong>, working within strict device memory constraints shared with the platform firmware.',
+        'Implemented the embedded interface with <strong>Vanilla JavaScript</strong> to minimize its resource footprint and support reliable operation on memory-constrained MikroTik hardware.',
+        'Built and maintained <strong>React and Redux</strong> features for the customer dashboard and network-management workflows.',
+        'Created <strong>custom captive portals</strong> for business customers, delivering branded authentication experiences shown to users when connecting to guest WiFi networks.'
       ]
     }
   },
