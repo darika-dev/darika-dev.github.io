@@ -16,7 +16,7 @@ import Contact from '../components/cv/SectionContact.vue'
 </script>
 
 <template>
-  <main class="mt-14 print:mt-0 pb-10">
+  <main class="mt-14 print:mt-0 pb-10 space-y-12 print:space-y-8">
     <Header />
 
     <Summary />

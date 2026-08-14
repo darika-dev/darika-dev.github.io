@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <Section class="max-w-5xl mx-auto !py-6 !print:px-0 print:max-w-none">
+  <Section class="max-w-5xl mx-auto !py-0 print:max-w-none">
     <h3
       v-if="title"
       class="pb-2 border-b border-gray-700 print:border-gray-200 after:absolute font-medium print:font-semibold uppercase tracking-widest break-after-avoid"

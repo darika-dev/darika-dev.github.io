@@ -26,7 +26,7 @@ const experience = [
     company: 'Umee',
     companyLink: 'https://ux.xyz/',
     description: {
-      info: 'Built web and mobile DeFi products with React, React Native, Next.js, TypeScript, and GraphQL, spanning frontend architecture, blockchain integrations, testing, and reusable UI systems.',
+      info: 'Built web and mobile products for Umee, a cross-chain DeFi lending protocol that reached <strong>~$26M TVL and $100M+ in loans</strong> during my tenure, using React, React Native, Next.js, TypeScript, and GraphQL.',
       list: [
         'Led the frontend refactoring of <strong>Umee 2.0</strong>, restructuring a difficult-to-scale legacy codebase and addressing performance and maintainability issues with <strong>React, Next.js, TypeScript, and GraphQL</strong>.',
         'Introduced <strong>Storybook, automated testing, and reusable UI patterns</strong> into a codebase that previously lacked component documentation and automated test coverage, improving development and release workflows.',
